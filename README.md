@@ -149,6 +149,15 @@ Setiap keputusan besar harus dapat ditelusuri ke misi dan dampak yang diharapkan
 
 Nama dan peran di atas adalah **kerangka branding dan pembagian peran yang diusulkan**. Struktur hukum, kepemilikan, kewenangan, kontrak, penggunaan merek, serta tanggung jawab operasional harus mengikuti dokumen resmi dan persetujuan yang berlaku. Jangan memasukkan data pribadi anak, keluarga, guru, kredensial, atau dokumen rahasia ke repository publik.
 
+## 🗺️ Kendali kerja dan status dokumen
+
+- [Master Work Roadmap](MASTER_WORK_ROADMAP.md) — urutan kerja, gerbang mutu, dan kriteria selesai.
+- [Document Registry](00-MASTER-CONTROL/registries/DOCUMENT_REGISTRY.md) — sumber status artefak yang benar-benar tersedia.
+- [RAM-000 — Master Control & Document Architecture](00-MASTER-CONTROL/RAM-000_MASTER_CONTROL_DOCUMENT_ARCHITECTURE.md) — arsitektur, Document DNA, dependensi, kontrol perubahan, dan mutu.
+- [RAM-016 — People, Talent & Organizational Culture OS](16-PEOPLE-TALENT-CULTURE/RAM-016_PEOPLE_TALENT_ORGANIZATIONAL_CULTURE_OS.md) — kerangka awal pengelolaan manusia dan budaya organisasi.
+
+> Status modul ditentukan oleh registry. Nama modul dalam peta arsitektur tidak berarti dokumennya telah selesai atau disahkan.
+
 ## 🗂️ Cara menggunakan repository
 
 Repository ini menjadi sumber utama. Dokumen yang dibuat di tempat lain harus ditautkan atau dipindahkan secara terkendali agar tidak berkembang menjadi versi liar.
