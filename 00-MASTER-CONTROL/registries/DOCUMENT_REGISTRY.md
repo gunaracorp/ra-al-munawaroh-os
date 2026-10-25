@@ -39,7 +39,7 @@ Baseline ini disusun dari file yang dapat diverifikasi saat registry dibuat. Kon
 | ROADMAP-001 | Master Work Roadmap | `MASTER_WORK_ROADMAP.md` | DRAFT | Program steward | README, registry | Dibuat bersama baseline registry; perlu pembaruan berkala |
 | REG-001 | Document Registry | `00-MASTER-CONTROL/registries/DOCUMENT_REGISTRY.md` | DRAFT | Document controller | RAM-000, roadmap | Registry awal; verifikasi setiap path dan status saat modul ditambah |
 | RAM-016 | People, Talent & Organizational Culture OS | `16-PEOPLE-TALENT-CULTURE/RAM-016_PEOPLE_TALENT_ORGANIZATIONAL_CULTURE_OS.md` | SCAFFOLD | People & culture lead | RAM-007, 013, 014, 015, 017 | Kerangka awal; isi, review, dan validasi implementasi masih diperlukan |
-| RAM-000 | Master Control & Document Architecture | Belum terverifikasi di repository pada baseline ini | PLANNED | Architecture owner | Semua RAM | Dokumen/diagram yang pernah dibuat secara terpisah harus diunggah dan diverifikasi sebelum status berubah |
+| RAM-000 | Master Control & Document Architecture | `00-MASTER-CONTROL/RAM-000_MASTER_CONTROL_DOCUMENT_ARCHITECTURE.md` | DRAFT | Architecture owner | Semua RAM | Artefak Markdown kanonis tersedia; review formal, verifikasi dependensi, dan persetujuan masih diperlukan |
 | RAM-001 | Foundational Constitution OS | Belum ditetapkan | PLANNED | Governance owner | RAM-000 | Buat artefak kanonis |
 | RAM-002 | Grand Human Development Model | Belum ditetapkan | PLANNED | Development framework lead | RAM-001, 009, 017, 018 | Buat artefak kanonis |
 | RAM-003 | Knowledge & Islamic-Universal Knowledge OS | Belum ditetapkan | PLANNED | Knowledge architect | RAM-001, 002 | Konsep pernah dirancang; belum dihitung sebagai file |
