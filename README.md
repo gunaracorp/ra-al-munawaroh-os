@@ -331,3 +331,17 @@ Konsultansi strategis: **PT Top Konsultan Internasional**
 <sub>Dokumen hidup · Tinjau secara berkala · Utamakan amanah, bukti, keselamatan, dan manfaat nyata.</sub>
 
 </div>
+
+
+## 🎛️ Execution Control Center
+
+Pusat kendali MVP untuk mengelola 99 paket kerja, penunjukan pemilik aktual, jadwal, anggaran, dependensi, indikator, bukti, temuan audit, dan persetujuan.
+
+- **[Buka Execution Control Center](EXECUTION-CONTROL-CENTER/index.html)**
+- [Petunjuk dan batasan MVP](EXECUTION-CONTROL-CENTER/README.md)
+- [Register 99 paket kerja (CSV)](EXECUTION-CONTROL-CENTER/data/WORK_REGISTER.csv)
+- [Register temuan audit](EXECUTION-CONTROL-CENTER/data/AUDIT_FINDINGS.csv)
+- [Log persetujuan](EXECUTION-CONTROL-CENTER/data/APPROVAL_LOG.csv)
+- [Protokol operasi dan tata kelola](EXECUTION-CONTROL-CENTER/OPERATING-PROTOCOL.md)
+
+> Catatan: dashboard saat ini menyimpan perubahan di browser lokal dan menyediakan ekspor/impor; belum ada login, sinkronisasi server, atau audit trail tahan manipulasi. Jangan masukkan data sensitif anak.
