@@ -152,7 +152,8 @@ Nama dan peran di atas adalah **kerangka branding dan pembagian peran yang diusu
 ## 🗺️ Kendali kerja dan status dokumen
 
 - [Master Work Roadmap](MASTER_WORK_ROADMAP.md) — urutan kerja, gerbang mutu, dan kriteria selesai.
-- [Roadmap 99 RA AL-MUNAWAROH](ROADMAP-99-RA-AL-MUNAWAROH.md) — 99 agenda strategis dalam sembilan pilar, dengan sepuluh negara rujukan dan tahapan implementasi.
+- [Roadmap 99 RA AL-MUNAWAROH — dokumen induk](ROADMAP-99-RA-AL-MUNAWAROH.md) — 99 agenda strategis dalam sembilan pilar, dengan sepuluh negara rujukan dan tahapan implementasi.
+- [Roadmap 99 — dashboard visual interaktif](ROADMAP-99-VISUAL.html) — tampilan premium responsif, pencarian agenda, filter pilar, dan penanda tinjauan lokal. Berkas HTML ini merupakan artefak desain; penayangan sebagai situs publik memerlukan hosting/deployment yang sesuai.
 - [Document Registry](00-MASTER-CONTROL/registries/DOCUMENT_REGISTRY.md) — sumber status artefak yang benar-benar tersedia.
 - [RAM-000 — Master Control & Document Architecture](00-MASTER-CONTROL/RAM-000_MASTER_CONTROL_DOCUMENT_ARCHITECTURE.md) — arsitektur, Document DNA, dependensi, kontrol perubahan, dan mutu.
 - [RAM-016 — People, Talent & Organizational Culture OS](16-PEOPLE-TALENT-CULTURE/RAM-016_PEOPLE_TALENT_ORGANIZATIONAL_CULTURE_OS.md) — kerangka awal pengelolaan manusia dan budaya organisasi.
