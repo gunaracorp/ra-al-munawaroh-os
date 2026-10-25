@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Execution Control Center v2 | RA Al-Munawaroh</title>
+<style>
+:root{--ink:#173b35;--green:#176b55;--gold:#a97924;--paper:#f4f7f3;--line:#dbe4dc;--muted:#5c7067;--red:#a83333;--amber:#8b5b0b;--blue:#285f88}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:#1c3029;font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}header{background:linear-gradient(120deg,#123e35,#176b55);color:white;padding:26px clamp(16px,4vw,48px)}header h1{margin:0;font-size:clamp(24px,4vw,38px)}header p{max-width:950px;color:#e1eee7;margin:8px 0 0}.wrap{max-width:1550px;margin:auto;padding:22px clamp(12px,3vw,36px)}.banner{padding:13px 15px;background:#fff5df;border-left:4px solid var(--gold);margin-bottom:16px}.banner strong{display:block}.topline{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.chip{display:inline-block;border-radius:20px;padding:4px 9px;background:#e7eee8;font-size:12px}.chip.ok{background:#e1f4e6;color:#175b2d}.chip.warn{background:#fff0ce;color:#7b4d00}.chip.bad{background:#ffe2e2;color:#8c2020}.chip.info{background:#e4effa;color:#214e7a}.stats{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:10px;margin-bottom:16px}.stat,.panel{background:white;border:1px solid var(--line);border-radius:12px;padding:14px}.stat small{display:block;color:var(--muted)}.stat strong{display:block;font-size:26px;color:var(--green);margin-top:4px}.stat .sub{font-size:11px;color:var(--muted);font-weight:400}.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:12px 0}.toolbar input,.toolbar select,button{font:inherit;padding:9px 11px;border:1px solid #c9d5cb;border-radius:8px;background:white;color:#20332d}.toolbar input{flex:1;min-width:210px}button{cursor:pointer}.btn{background:var(--green);color:white;border-color:var(--green)}.btn.secondary{background:#edf3ed;color:var(--ink)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.panel h2{font-size:16px;margin:0 0 10px;color:var(--ink)}.barrow{display:grid;grid-template-columns:minmax(105px,1.1fr) minmax(80px,2fr) 38px;gap:8px;align-items:center;margin:8px 0}.track{height:9px;background:#e9eee9;border-radius:99px;overflow:hidden}.fill{height:100%;background:var(--green);border-radius:99px}.fill.warn{background:#c58b28}.fill.bad{background:#b73b3b}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:12px;background:white}table{border-collapse:collapse;width:100%;min-width:1100px}th,td{text-align:left;padding:10px 11px;border-bottom:1px solid #e8eee8;vertical-align:top}th{background:#eaf1e9;color:var(--ink);position:sticky;top:0;z-index:1}tr:hover td{background:#f8fbf7}.muted{color:var(--muted)}.small{font-size:12px}.pill{display:inline-block;border-radius:20px;padding:3px 8px;background:#edf1ed;font-size:11px;white-space:nowrap}.pill.overdue,.pill.invalid{background:#ffe2e2;color:#8c2020}.pill.pending{background:#fff0ce;color:#7b4d00}.pill.approved{background:#e1f4e6;color:#175b2d}.pill.running{background:#e4effa;color:#214e7a}.link{color:var(--green);font-weight:650;text-decoration:underline}.footer{padding:20px;text-align:center;color:var(--muted);font-size:12px}.hidden{display:none!important}.err{color:var(--red)}.checklist{padding-left:20px;margin:6px 0}.checklist li{margin:5px 0}.load{padding:18px;background:white;border:1px solid var(--line);border-radius:12px}@media(max-width:1050px){.stats{grid-template-columns:repeat(3,minmax(110px,1fr))}}@media(max-width:650px){.stats{grid-template-columns:repeat(2,minmax(100px,1fr))}.grid2{grid-template-columns:1fr}.stat strong{font-size:22px}}
+</style>
+</head>
+<body>
+<header><h1>Execution Control Center <span style="font-size:.55em;vertical-align:middle">v2</span></h1><p>RA AL-MUNAWAROH · membaca register kanonis untuk memantau 99 paket kerja, risiko, tenggat, bukti, dan keputusan persetujuan.</p></header>
+<main class="wrap">
+<div class="banner"><strong>Mode baca dari register kanonis · bukan sistem kolaborasi</strong>Dashboard ini mengambil CSV dari repository publik saat halaman dibuka atau tombol muat ulang ditekan. Tampilan bersifat baca-saja: tidak menulis balik ke GitHub, tidak mengunci data, dan tidak mengautentikasi pengguna. Perubahan resmi tetap melalui proses review/commit repository.</div>
+<div class="topline"><span id="connection" class="chip warn">Memuat register…</span><span id="lastLoaded" class="small muted">Belum ada waktu pemuatan</span><button id="reload" class="btn">Muat ulang register</button><a class="link" href="./README.md">Panduan</a><a class="link" href="./data/WORK_REGISTER.csv">Register paket kerja</a></div>
+<div id="loadError" class="load hidden err" role="alert"></div>
+<section class="stats" aria-label="Ringkasan utama">
+<div class="stat"><small>Paket terbaca</small><strong id="total">—</strong><div class="sub">Target register: 99</div></div>
+<div class="stat"><small>Berjalan</small><strong id="running">—</strong><div class="sub">Status BERJALAN</div></div>
+<div class="stat"><small>Terlambat</small><strong id="overdue">—</strong><div class="sub">Tenggat lewat, belum disetujui/berhenti</div></div>
+<div class="stat"><small>Risiko tinggi</small><strong id="highRisk">—</strong><div class="sub">Temuan audit berisiko tinggi/kritis yang terbuka</div></div>
+<div class="stat"><small>Menunggu keputusan</small><strong id="pending">—</strong><div class="sub">Paket menunggu review atau persetujuan</div></div>
+<div class="stat"><small>Pemilik aktual terisi</small><strong id="owners">—</strong><div class="sub">Dari total paket yang terbaca</div></div>
+</section>
+<div class="grid2">
+<section class="panel"><h2>Distribusi status</h2><div id="statusChart" class="muted">Menunggu data…</div></section>
+<section class="panel"><h2>Gerbang kelengkapan kontrol</h2><div id="controlChart" class="muted">Menunggu data…</div><p class="small muted">Kelengkapan kolom bukan bukti mutu atau persetujuan yang sah.</p></section>
+</div>
+<section class="panel">
+<h2>Filter dan daftar paket</h2>
+<div class="toolbar"><input id="search" type="search" placeholder="Cari ID, agenda, pemilik, indikator…"><select id="pillar"><option value="">Semua pilar</option></select><select id="status"><option value="">Semua status</option><option>BELUM DIMULAI</option><option>SIAP DIKERJAKAN</option><option>BERJALAN</option><option>MENUNGGU REVIEW</option><option>DIPERBAIKI</option><option>TERTUNDA</option><option>DISETUJUI</option><option>DIHENTIKAN</option><option>STATUS TIDAK VALID</option></select><select id="deadline"><option value="">Semua tenggat</option><option value="overdue">Terlambat</option><option value="7">Jatuh tempo ≤ 7 hari</option><option value="30">Jatuh tempo ≤ 30 hari</option><option value="none">Tanpa tenggat</option></select><select id="risk"><option value="">Semua risiko</option><option value="high">Risiko tinggi/kritis terbuka</option><option value="finding">Memiliki temuan audit terbuka</option></select><button id="reset" class="btn secondary">Reset filter</button></div>
+<div class="tablewrap"><table><thead><tr><th>ID / Agenda</th><th>Pilar</th><th>Pemilik aktual</th><th>Tenggat / status waktu</th><th>Status kerja</th><th>Anggaran disetujui</th><th>Kontrol persetujuan</th><th>Risiko / temuan</th><th>Register</th></tr></thead><tbody id="rows"><tr><td colspan="9">Memuat…</td></tr></tbody></table></div><p id="resultCount" class="small muted"></p>
+</section>
+<div class="grid2">
+<section class="panel"><h2>Temuan audit terbuka</h2><div id="findingsSummary" class="muted">Menunggu data…</div><p class="small"><a class="link" href="./data/AUDIT_FINDINGS.csv">Buka register temuan audit</a></p></section>
+<section class="panel"><h2>Kontrol persetujuan</h2><div id="approvalSummary" class="muted">Menunggu data…</div><p class="small"><a class="link" href="./data/APPROVAL_LOG.csv">Buka log persetujuan</a> · <a class="link" href="./data/DECISION_LOG.csv">Buka log keputusan</a></p></section>
+</div>
+<section class="panel"><h2>Validasi data yang perlu diperhatikan</h2><div id="validationSummary" class="muted">Menunggu data…</div><p class="small muted">Validasi membantu menemukan kekosongan/ketidakkonsistenan; keputusan akhir tetap memerlukan pemeriksaan manusia yang berwenang.</p></section>
+</main>
+<footer class="footer">RAM-ECC-001 · v2.0.0 · Dashboard baca-saja dari CSV publik · Jangan memasukkan atau menampilkan data pribadi anak.</footer>
+<script>
+(function(){
+"use strict";
+const BASE="https://raw.githubusercontent.com/gunaracorp/ra-al-munawaroh-os/main/EXECUTION-CONTROL-CENTER/data/";
+const FILES={work:"WORK_REGISTER.csv",audit:"AUDIT_FINDINGS.csv",approvals:"APPROVAL_LOG.csv"};
+const VALID=["BELUM DIMULAI","SIAP DIKERJAKAN","BERJALAN","MENUNGGU REVIEW","DIPERBAIKI","TERTUNDA","DISETUJUI","DIHENTIKAN"];
+let state={work:[],audit:[],approvals:[],loadedAt:null,errors:[]};
+const $=id=>document.getElementById(id);
+function parseCSV(text){
+ const rows=[];let row=[],field="",quoted=false;
+ for(let i=0;i<text.length;i++){const c=text[i];if(quoted){if(c==='"'&&text[i+1]==='"'){field+='"';i++;}else if(c==='"'){quoted=false;}else{field+=c;}}else{if(c==='"'){quoted=true;}else if(c===","){row.push(field);field="";}else if(c==="\n"){row.push(field.replace(/\r$/,""));rows.push(row);row=[];field="";}else{field+=c;}}}
+ if(field.length||row.length){row.push(field.replace(/\r$/,""));rows.push(row);}
+ if(!rows.length)return [];
+ const headers=rows.shift().map(h=>h.trim());
+ return rows.filter(r=>r.some(v=>v.trim()!=="")).map(r=>{const o={};headers.forEach((h,i)=>o[h]=(r[i]||"").trim());return o;});
+}
+async function fetchCSV(file){const res=await fetch(BASE+file+"?v="+Date.now(),{cache:"no-store"});if(!res.ok)throw new Error(file+" gagal dimuat (HTTP "+res.status+").");return parseCSV(await res.text());}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function dateValue(s){if(!s)return null;const d=new Date(s+"T00:00:00");return Number.isNaN(d.getTime())?null:d;}
+function daysTo(s){const d=dateValue(s);if(!d)return null;const now=new Date();now.setHours(0,0,0,0);return Math.round((d-now)/86400000);}
+function isApproved(w){return w.status==="DISETUJUI"&&w.keputusan&&/SETUJU|DISETUJUI|APPROVED/i.test(w.keputusan)&&w.approver&&w.tanggal_persetujuan&&w.versi_hasil;}
+function isOpenFinding(a){return !/TUTUP|SELESAI|CLOSED|DITERIMA/i.test(a.status||"");}
+function highFinding(a){return /KRITIS|CRITICAL|TINGGI|HIGH/i.test(a.tingkat_risiko||"");}
+function rupiah(v,c){if(!v)return "Belum diisi";const n=Number(String(v).replace(/[^\d.-]/g,""));if(!Number.isFinite(n))return esc(v);return new Intl.NumberFormat("id-ID",{style:"currency",currency:c||"IDR",maximumFractionDigits:0}).format(n);}
+function bar(label,count,total,kind){const pct=total?Math.round(count/total*100):0;return '<div class="barrow"><span>'+esc(label)+'</span><div class="track"><div class="fill '+(kind||"")+'" style="width:'+pct+'%"></div></div><strong>'+count+'</strong></div>';}
+function loadChart(){
+ const total=state.work.length;const counts={};VALID.forEach(s=>counts[s]=0);let invalid=0;state.work.forEach(w=>{if(Object.prototype.hasOwnProperty.call(counts,w.status))counts[w.status]++;else invalid++;});
+ $("statusChart").innerHTML=VALID.map(s=>bar(s,counts[s],total,s==="TERTUNDA"?"warn":"")).join("")+(invalid?bar("Status tidak valid",invalid,total,"bad"):"");
+ const checks=[
+ ["Pemilik aktual terisi",state.work.filter(w=>w.pemilik_aktual).length],
+ ["Tenggat valid",state.work.filter(w=>dateValue(w.tenggat)).length],
+ ["Anggaran disetujui terisi",state.work.filter(w=>w.anggaran_disetujui).length],
+ ["Reviewer + approver terisi",state.work.filter(w=>w.reviewer&&w.approver).length],
+ ["Keputusan dengan bukti minimum",state.work.filter(isApproved).length]
+ ];
+ $("controlChart").innerHTML=checks.map(x=>bar(x[0],x[1],total,x[1]===total?"":"warn")).join("");
+ const open=state.audit.filter(isOpenFinding);$("findingsSummary").innerHTML="<p><strong>"+open.length+"</strong> temuan audit terbuka dari "+state.audit.length+" catatan.</p>"+bar("Kritis/tinggi terbuka",open.filter(highFinding).length,Math.max(open.length,1),"bad")+"<p class='small muted'>Temuan dianggap terbuka bila status belum menyatakan tutup/selesai/closed/diterima. Periksa definisi status pada register.</p>";
+ const approved=state.approvals.filter(a=>/SETUJU|DISETUJUI|APPROVED/i.test(a.keputusan||"")).length;
+ const pending=state.approvals.filter(a=>/MENUNGGU|PENDING|DIAJUKAN|REVIEW/i.test(a.keputusan||"")).length;
+ $("approvalSummary").innerHTML="<p>Total catatan keputusan: <strong>"+state.approvals.length+"</strong></p><p>Keputusan setuju tercatat: <strong>"+approved+"</strong></p><p>Menunggu/tahap review: <strong>"+pending+"</strong></p><p class='small muted'>Dashboard tidak memberi persetujuan. Kolom paket dan log keputusan harus diperiksa bersama.</p>";
+}
+function validate(){
+ const issues=[];const ids=new Set();let duplicate=0,invalidStatus=0,missingOwner=0,missingDue=0,approvedWeak=0,approvedWithoutLog=0,invalidDate=0,missingBudget=0;
+ state.work.forEach(w=>{if(ids.has(w.id))duplicate++;ids.add(w.id);if(!VALID.includes(w.status))invalidStatus++;if(!w.pemilik_aktual)missingOwner++;if(!w.tenggat)missingDue++;else if(!dateValue(w.tenggat))invalidDate++;if(!w.anggaran_disetujui)missingBudget++;if(w.status==="DISETUJUI"&&!isApproved(w))approvedWeak++;if(w.status==="DISETUJUI"&&isApproved(w)&&!state.approvals.some(a=>a.wp_id===w.id&&/SETUJU|DISETUJUI|APPROVED/i.test(a.keputusan||"")))approvedWithoutLog++;});
+ if(state.work.length!==99)issues.push("Jumlah paket terbaca "+state.work.length+"; target yang diharapkan 99.");
+ if(duplicate)issues.push(duplicate+" ID paket duplikat.");
+ if(invalidStatus)issues.push(invalidStatus+" paket memiliki status di luar daftar yang diizinkan.");
+ if(missingOwner)issues.push(missingOwner+" paket belum memiliki pemilik aktual.");
+ if(missingDue)issues.push(missingDue+" paket belum memiliki tenggat kalender.");
+ if(invalidDate)issues.push(invalidDate+" nilai tenggat tidak dapat dibaca sebagai tanggal ISO YYYY-MM-DD.");
+ if(missingBudget)issues.push(missingBudget+" paket belum mencatat anggaran disetujui; kosong tidak sama dengan Rp0.");
+ if(approvedWeak)issues.push(approvedWeak+" paket berstatus DISETUJUI tetapi belum memenuhi kolom minimum: keputusan setuju, approver, tanggal persetujuan, dan versi hasil.");
+ if(approvedWithoutLog)issues.push(approvedWithoutLog+" paket disetujui pada register utama tetapi tidak ditemukan keputusan setuju di log persetujuan.");
+ if(!issues.length)issues.push("Tidak ditemukan masalah pada aturan pemeriksaan dasar yang aktif. Ini bukan sertifikasi kepatuhan atau audit menyeluruh.");
+ $("validationSummary").innerHTML="<p><strong>"+issues.length+"</strong> catatan pemeriksaan.</p><ul class='checklist'>"+issues.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>";
+}
+function render(){
+ const total=state.work.length,now=new Date();const overdue=state.work.filter(w=>{const d=daysTo(w.tenggat);return d!==null&&d<0&&!["DISETUJUI","DIHENTIKAN"].includes(w.status);});
+ const open=state.audit.filter(isOpenFinding);$("total").textContent=total;$("running").textContent=state.work.filter(w=>w.status==="BERJALAN").length;$("overdue").textContent=overdue.length;$("highRisk").textContent=open.filter(highFinding).length;$("pending").textContent=state.work.filter(w=>["MENUNGGU REVIEW","DIPERBAIKI"].includes(w.status)).length;$("owners").textContent=state.work.filter(w=>w.pemilik_aktual).length;
+ const pillar=$("pillar");const old=pillar.value;const pillars=[...new Set(state.work.map(w=>w.pilar).filter(Boolean))].sort();pillar.innerHTML='<option value="">Semua pilar</option>'+pillars.map(p=>'<option value="'+esc(p)+'">'+esc(p)+'</option>').join("");pillar.value=pillars.includes(old)?old:"";
+ loadChart();validate();filterRows();
+ $("connection").className="chip ok";$("connection").textContent="Register kanonis berhasil dimuat";$("lastLoaded").textContent="Pembaruan tampilan: "+new Intl.DateTimeFormat("id-ID",{dateStyle:"medium",timeStyle:"short"}).format(state.loadedAt||new Date());
+}
+function filterRows(){
+ const q=$("search").value.toLowerCase(),p=$("pillar").value,s=$("status").value,d=$("deadline").value,r=$("risk").value;
+ const visible=state.work.filter(w=>{
+  const hay=[w.id,w.agenda,w.pilar,w.pemilik_aktual,w.pemilik_peran_awal,w.indikator,w.risiko_utama].join(" ").toLowerCase();
+  if(q&&!hay.includes(q))return false;if(p&&w.pilar!==p)return false;if(s&&s==="STATUS TIDAK VALID"&&VALID.includes(w.status))return false;if(s&&s!=="STATUS TIDAK VALID"&&w.status!==s)return false;
+  const days=daysTo(w.tenggat);if(d==="overdue"&&!(days!==null&&days<0&&!["DISETUJUI","DIHENTIKAN"].includes(w.status)))return false;if(d==="7"&&!(days!==null&&days>=0&&days<=7))return false;if(d==="30"&&!(days!==null&&days>=0&&days<=30))return false;if(d==="none"&&w.tenggat)return false;
+  const findings=state.audit.filter(a=>a.wp_id===w.id&&isOpenFinding(a));if(r==="high"&&!findings.some(highFinding))return false;if(r==="finding"&&!findings.length)return false;return true;
+ });
+ $("rows").innerHTML=visible.map(w=>{
+  const days=daysTo(w.tenggat),late=days!==null&&days<0&&!["DISETUJUI","DIHENTIKAN"].includes(w.status),findings=state.audit.filter(a=>a.wp_id===w.id&&isOpenFinding(a)),approved=isApproved(w);
+  let timing=!w.tenggat?"Tenggat belum diisi":days===null?"Tanggal tidak valid":late?"Terlambat "+Math.abs(days)+" hari":days===0?"Jatuh tempo hari ini":days<=7?"Dalam "+days+" hari":days+" hari lagi";
+  const statusClass=late||!VALID.includes(w.status)?"invalid":w.status==="DISETUJUI"?(approved?"approved":"pending"):w.status==="BERJALAN"?"running":"";
+  const approvalText=w.status==="DISETUJUI"?(approved?"Kolom minimum terisi":"Perlu verifikasi kolom keputusan"):["MENUNGGU REVIEW","DIPERBAIKI"].includes(w.status)?"Belum final":"Belum disetujui";
+  return "<tr><td><strong>"+esc(w.id)+"</strong><br>"+esc(w.agenda)+"<br><span class='small muted'>Prioritas: "+esc(w.prioritas||"belum ditetapkan")+"</span></td><td>"+esc(w.pilar)+"</td><td>"+(w.pemilik_aktual?esc(w.pemilik_aktual):"<span class='pill pending'>Belum ditetapkan</span>")+"<br><span class='small muted'>Peran usulan: "+esc(w.pemilik_peran_awal)+"</span></td><td>"+esc(w.tenggat||"—")+"<br><span class='pill "+(late?"overdue":"")+"'>"+esc(timing)+"</span></td><td><span class='pill "+statusClass+"'>"+esc(VALID.includes(w.status)?w.status:"STATUS TIDAK VALID: "+w.status)+"</span></td><td>"+esc(rupiah(w.anggaran_disetujui,w.mata_uang))+"</td><td><span class='pill "+(approved?"approved":"pending")+"'>"+esc(approvalText)+"</span><br><span class='small muted'>Approver: "+esc(w.approver||"—")+" · versi: "+esc(w.versi_hasil||"—")+"</span></td><td>"+(findings.length?"<span class='pill "+(findings.some(highFinding)?"invalid":"pending")+"'>"+findings.length+" terbuka</span>":"<span class='small muted'>Tidak ada temuan terbuka terdaftar</span>")+"</td><td><a class='link' href='./data/WORK_REGISTER.csv'>Register</a></td></tr>";
+ }).join("")||'<tr><td colspan="9">Tidak ada paket yang sesuai filter.</td></tr>';
+ $("resultCount").textContent="Menampilkan "+visible.length+" dari "+state.work.length+" paket. Data berasal dari register kanonis saat pemuatan terakhir.";
+}
+async function reload(){
+ $("connection").className="chip warn";$("connection").textContent="Memuat register…";$("loadError").classList.add("hidden");$("reload").disabled=true;
+ try{
+  const results=await Promise.allSettled([fetchCSV(FILES.work),fetchCSV(FILES.audit),fetchCSV(FILES.approvals)]);
+  const names=["work","audit","approvals"];const errs=[];
+  results.forEach((r,i)=>{if(r.status==="fulfilled")state[names[i]]=r.value;else errs.push(names[i]+": "+r.reason.message);});
+  if(results[0].status!=="fulfilled")throw new Error("Register paket kerja wajib tersedia. "+errs.join(" "));
+  state.loadedAt=new Date();state.errors=errs;
+  if(errs.length){$("loadError").classList.remove("hidden");$("loadError").textContent="Sebagian register tidak berhasil dimuat: "+errs.join(" ")+" Ringkasan register yang gagal dimuat mungkin tidak lengkap.";$("connection").className="chip warn";$("connection").textContent="Sebagian data gagal dimuat";}
+  render();
+ }catch(e){$("connection").className="chip bad";$("connection").textContent="Gagal memuat data";$("loadError").classList.remove("hidden");$("loadError").textContent=e.message+" Pastikan dashboard dijalankan melalui hosting yang mengizinkan fetch HTTPS, bukan file:// lokal.";}finally{$("reload").disabled=false;}
+}
+$("reload").addEventListener("click",reload);["search","pillar","status","deadline","risk"].forEach(id=>$(id).addEventListener("input",filterRows));$("reset").addEventListener("click",()=>{["search","pillar","status","deadline","risk"].forEach(id=>$(id).value="");filterRows();});
+reload();
+})();
+</script>
+</body></html>
