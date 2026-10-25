@@ -345,3 +345,20 @@ Pusat kendali MVP untuk mengelola 99 paket kerja, penunjukan pemilik aktual, jad
 - [Protokol operasi dan tata kelola](EXECUTION-CONTROL-CENTER/OPERATING-PROTOCOL.md)
 
 > Catatan: dashboard saat ini menyimpan perubahan di browser lokal dan menyediakan ekspor/impor; belum ada login, sinkronisasi server, atau audit trail tahan manipulasi. Jangan masukkan data sensitif anak.
+
+
+## 🚨 Urgent Readiness & Governance Pack
+
+Prioritas awal adalah keselamatan anak, risiko operasional, bukti, dan keputusan yang dapat diaudit. Seluruh dokumen baru berstatus **DRAFT** sampai ditinjau dan disahkan oleh pihak yang berwenang.
+
+- [RAM-017 — Safeguarding, Child Protection & Ethics OS](17-SAFEGUARDING-CHILD-PROTECTION-ETHICS/RAM-017_SAFEGUARDING_CHILD_PROTECTION_ETHICS_OS.md)
+- [RAM-020 — Risk, Resilience, Safety & Business Continuity OS](20-RISK-RESILIENCE-SAFETY-CONTINUITY/RAM-020_RISK_RESILIENCE_SAFETY_BUSINESS_CONTINUITY_OS.md)
+- [Rencana Kesiapan 30 Hari](EXECUTION-CONTROL-CENTER/URGENT-30-DAY-READINESS-PLAN.md)
+- [Decision Register](00-MASTER-CONTROL/registries/DECISION_REGISTER.md)
+- [Evidence Register](00-MASTER-CONTROL/registries/EVIDENCE_REGISTER.md)
+- [Assumption & Hypothesis Register](00-MASTER-CONTROL/registries/ASSUMPTION_HYPOTHESIS_REGISTER.md)
+- [Risk Register](00-MASTER-CONTROL/registries/RISK_REGISTER.md)
+- [Change Register](00-MASTER-CONTROL/registries/CHANGE_REGISTER.md)
+- [Artifact & Dependency Map](00-MASTER-CONTROL/registries/ARTIFACT_DEPENDENCY_MAP.md)
+
+**Batas penting:** dokumen bukan bukti kesiapan aktual, bukan nasihat hukum, dan bukan persetujuan formal. Verifikasi persyaratan setempat, kondisi lokasi, pemilik aktual, bukti, dan keputusan sebelum penerapan. Jangan menaruh data pribadi anak di repository publik.
