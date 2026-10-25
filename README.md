@@ -149,6 +149,16 @@ Setiap keputusan besar harus dapat ditelusuri ke misi dan dampak yang diharapkan
 
 Nama dan peran di atas adalah **kerangka branding dan pembagian peran yang diusulkan**. Struktur hukum, kepemilikan, kewenangan, kontrak, penggunaan merek, serta tanggung jawab operasional harus mengikuti dokumen resmi dan persetujuan yang berlaku. Jangan memasukkan data pribadi anak, keluarga, guru, kredensial, atau dokumen rahasia ke repository publik.
 
+
+
+## 🎛️ Execution Control Center — kendali 99 paket kerja
+
+- [Buka dashboard MVP](EXECUTION-CONTROL-CENTER/index.html) — pencarian, filter, edit lokal, ekspor/impor data.
+- [Panduan pusat kendali](EXECUTION-CONTROL-CENTER/README.md) · [Protokol operasi](EXECUTION-CONTROL-CENTER/OPERATING-PROTOCOL.md)
+- Register kanonis: [99 paket kerja](EXECUTION-CONTROL-CENTER/data/WORK_REGISTER.csv), [pemilik aktual](EXECUTION-CONTROL-CENTER/data/OWNER_REGISTER.csv), [dependensi](EXECUTION-CONTROL-CENTER/data/DEPENDENCY_REGISTER.csv), [bukti](EXECUTION-CONTROL-CENTER/data/EVIDENCE_REGISTER.csv), [temuan audit](EXECUTION-CONTROL-CENTER/data/AUDIT_FINDINGS.csv), [persetujuan](EXECUTION-CONTROL-CENTER/data/APPROVAL_LOG.csv), [keputusan](EXECUTION-CONTROL-CENTER/data/DECISION_LOG.csv), dan [perubahan](EXECUTION-CONTROL-CENTER/data/CHANGE_LOG.csv).
+
+**Batas penting:** dashboard masih MVP lokal di browser; data tidak otomatis tersinkron antarpengguna atau tersimpan kembali ke GitHub. Jangan masukkan data sensitif anak. Nama pemilik, tanggal kalender, anggaran, bukti, dan persetujuan nyata harus ditetapkan dan diverifikasi—tidak boleh direka.
+
 ## 🗺️ Kendali kerja dan status dokumen
 
 - [Master Work Roadmap](MASTER_WORK_ROADMAP.md) — urutan kerja, gerbang mutu, dan kriteria selesai.
