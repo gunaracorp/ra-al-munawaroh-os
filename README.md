@@ -153,12 +153,12 @@ Nama dan peran di atas adalah **kerangka branding dan pembagian peran yang diusu
 
 ## 🎛️ Execution Control Center — kendali 99 paket kerja
 
-- [Buka dashboard MVP](EXECUTION-CONTROL-CENTER/index.html) — pencarian, filter, edit lokal, ekspor/impor data.
-- [Panduan pusat kendali](EXECUTION-CONTROL-CENTER/README.md) · [Protokol operasi](EXECUTION-CONTROL-CENTER/OPERATING-PROTOCOL.md)
+- [Buka dashboard v2 — baca register kanonis](EXECUTION-CONTROL-CENTER/index-v2.html) — ringkasan status, tenggat, risiko audit, validasi data, dan kontrol persetujuan.
+- [Dashboard MVP lokal v1](EXECUTION-CONTROL-CENTER/index.html) — edit browser lokal dan ekspor/impor; bukan sinkronisasi bersama.
+- [Panduan pusat kendali](EXECUTION-CONTROL-CENTER/README.md) · [Release notes v2](EXECUTION-CONTROL-CENTER/V2-RELEASE-NOTES.md) · [Data dictionary](EXECUTION-CONTROL-CENTER/V2-DATA-DICTIONARY.md)
 - Register kanonis: [99 paket kerja](EXECUTION-CONTROL-CENTER/data/WORK_REGISTER.csv), [pemilik aktual](EXECUTION-CONTROL-CENTER/data/OWNER_REGISTER.csv), [dependensi](EXECUTION-CONTROL-CENTER/data/DEPENDENCY_REGISTER.csv), [bukti](EXECUTION-CONTROL-CENTER/data/EVIDENCE_REGISTER.csv), [temuan audit](EXECUTION-CONTROL-CENTER/data/AUDIT_FINDINGS.csv), [persetujuan](EXECUTION-CONTROL-CENTER/data/APPROVAL_LOG.csv), [keputusan](EXECUTION-CONTROL-CENTER/data/DECISION_LOG.csv), dan [perubahan](EXECUTION-CONTROL-CENTER/data/CHANGE_LOG.csv).
 
-**Batas penting:** dashboard masih MVP lokal di browser; data tidak otomatis tersinkron antarpengguna atau tersimpan kembali ke GitHub. Jangan masukkan data sensitif anak. Nama pemilik, tanggal kalender, anggaran, bukti, dan persetujuan nyata harus ditetapkan dan diverifikasi—tidak boleh direka.
-
+**Batas penting:** dashboard v2 membaca data publik dan bersifat read-only. Ia tidak menyimpan perubahan, tidak mengautentikasi pengguna, dan tidak otomatis menyinkronkan antar-pengguna. Jangan masukkan data sensitif anak. Nama pemilik, tanggal, anggaran, bukti, dan persetujuan harus berasal dari fakta dan kewenangan nyata.
 ## 🗺️ Kendali kerja dan status dokumen
 
 - [Master Work Roadmap](MASTER_WORK_ROADMAP.md) — urutan kerja, gerbang mutu, dan kriteria selesai.
