@@ -47,3 +47,10 @@ BELUM DIMULAI → SIAP DIKERJAKAN → BERJALAN → MENUNGGU REVIEW → DISETUJUI
 6. Ekspor dari dashboard lokal, review perubahan, lalu commit register kanonis melalui GitHub. Untuk kerja bersama, gunakan proses pull request/review; dashboard saat ini bukan aplikasi multi-pengguna.
 
 **Aturan status:** bila nama pemilik, tanggal, biaya, bukti, atau otorisasi belum diketahui, biarkan kosong atau tandai belum ditetapkan. Jangan mengisi data rekaan untuk mempercantik dashboard.
+
+
+## Versi 2 — dashboard baca-saja dari register kanonis
+- [Buka Dashboard v2](./index-v2.html) — mengambil CSV kanonis dari repository saat dimuat ulang; menampilkan status, tenggat, risiko audit, kelengkapan kontrol, dan ringkasan persetujuan.
+- [Release notes v2](./V2-RELEASE-NOTES.md) · [Data dictionary & aturan validasi](./V2-DATA-DICTIONARY.md)
+
+Dashboard v2 sengaja **read-only**. Perubahan tidak disimpan dari browser dan tidak dikirim ke GitHub. Register CSV tetap menjadi sumber kanonis; lakukan perubahan melalui proses review/commit. Persetujuan yang tampil sebagai lengkap tetap perlu diverifikasi manusia terhadap mandat, bukti, dan log keputusan.
