@@ -35,3 +35,15 @@ Perubahan harus mencatat siapa, kapan, apa, alasan, dan referensi keputusan. Com
 - Per gerbang: keputusan eksplisit berdasarkan bukti.
 - Triwulanan: tinjau anggaran, manfaat, beban guru, keselamatan, dan prioritas.
 Jadwal ini rancangan awal dan perlu disahkan sesuai kapasitas lembaga.
+
+
+## 8. Register tambahan dan keterlacakan
+Gunakan register terpisah berikut sebagai indeks terkendali: OWNER_REGISTER.csv untuk mandat dan penugasan aktual; DEPENDENCY_REGISTER.csv untuk dependensi yang telah diverifikasi; EVIDENCE_REGISTER.csv untuk metadata bukti dan klasifikasi akses; DECISION_LOG.csv untuk keputusan dan dasar kewenangan; CHANGE_LOG.csv untuk jejak perubahan artefak.
+
+ID WP harus stabil dan merujuk ke WORK_REGISTER.csv. Setiap bukti/keputusan/perubahan harus merujuk ke versi artefak yang tepat. Jangan mengisi nama, tanggal, biaya, mandat, atau status verifikasi berdasarkan perkiraan. Gunakan BELUM DITETAPKAN atau kosong sesuai kolom bila belum ada fakta.
+
+## 9. Perlindungan data dan batas publik
+Repository ini dapat terlihat publik. Simpan hanya metadata minimal yang aman dipublikasikan. Jangan simpan nama lengkap anak, identitas, foto, rekam kesehatan, catatan insiden individual, data keluarga, tanda tangan, kredensial, atau bukti audit rahasia di GitHub publik. Untuk bukti terbatas, cantumkan ID referensi atau lokasi pada penyimpanan privat yang aksesnya diatur; jangan masukkan tautan yang membocorkan akses.
+
+## 10. Batas integritas audit
+CSV dalam repository adalah catatan versi melalui Git, bukan sistem audit yang kebal manipulasi. Gunakan pull request, reviewer independen, commit history, pembatasan akses repository, dan pencadangan sesuai kebijakan. Keputusan yang salah tidak dihapus diam-diam; buat entri koreksi yang merujuk keputusan sebelumnya. Dashboard browser hanya antarmuka bantu, bukan sistem rekaman resmi.
