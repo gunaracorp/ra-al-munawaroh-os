@@ -29,3 +29,21 @@ Dashboard ini adalah **MVP sisi-klien**. Perubahan yang disimpan di browser hany
 
 ## Status
 BELUM DIMULAI → SIAP DIKERJAKAN → BERJALAN → MENUNGGU REVIEW → DISETUJUI. Status alternatif: DIPERBAIKI, TERTUNDA, DIHENTIKAN. DISETUJUI hanya jika keputusan nyata dan bukti tercatat pada log persetujuan.
+
+
+## Register kendali tambahan
+- [Register pemilik aktual](./data/OWNER_REGISTER.csv) — mandat, cakupan WP, delegasi, masa berlaku, dan deklarasi konflik kepentingan.
+- [Register dependensi](./data/DEPENDENCY_REGISTER.csv) — relasi antar-WP yang diverifikasi; jangan menganggap dependensi selesai hanya karena paket sebelumnya bernomor lebih kecil.
+- [Register bukti](./data/EVIDENCE_REGISTER.csv) — indeks bukti dengan lokasi terkendali, versi, klasifikasi akses, dan verifikasi. Simpan bukti sensitif di sistem privat, bukan repository publik.
+- [Log keputusan](./data/DECISION_LOG.csv) — keputusan, dasar kewenangan, alternatif, risiko yang diterima, dan tindak lanjut.
+- [Log perubahan](./data/CHANGE_LOG.csv) — dampak perubahan pada artefak, versi, review, persetujuan, dan commit.
+
+## Urutan aktivasi yang disarankan
+1. Pimpinan mengesahkan mandat, batas kewenangan, dan daftar peran.
+2. Isi OWNER_REGISTER.csv dengan nama aktual dan mandat; lalu tetapkan satu pemilik akuntabel per WP di WORK_REGISTER.csv.
+3. Pecah dependensi yang masih berupa teks menjadi baris terverifikasi di DEPENDENCY_REGISTER.csv.
+4. Tetapkan tanggal kalender dan anggaran hanya setelah kapasitas, penawaran/kuantitas, sumber dana, dan otorisasi tersedia.
+5. Catat bukti, temuan, review, keputusan, dan perubahan pada register masing-masing. Jangan menghapus sejarah.
+6. Ekspor dari dashboard lokal, review perubahan, lalu commit register kanonis melalui GitHub. Untuk kerja bersama, gunakan proses pull request/review; dashboard saat ini bukan aplikasi multi-pengguna.
+
+**Aturan status:** bila nama pemilik, tanggal, biaya, bukti, atau otorisasi belum diketahui, biarkan kosong atau tandai belum ditetapkan. Jangan mengisi data rekaan untuk mempercantik dashboard.
