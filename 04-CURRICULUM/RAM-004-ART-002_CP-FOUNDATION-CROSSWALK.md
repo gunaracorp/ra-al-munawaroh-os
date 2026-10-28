@@ -118,3 +118,12 @@ Hindari: inferensi karakter dari satu insiden, peringkat anak, diagnosis oleh pe
 6. Reconcile each crosswalk row and the competency map against the locked official text; unsupported or ambiguous mappings stay marked UNRESOLVED.
 
 Until these steps are complete, CP-linked goals in this document remain provisional internal design examples and the artifact must not be marked APPROVED.
+
+
+## 9. Official CP decision identified — 2026-10-29
+
+A more specific official primary-source candidate has been identified: **Keputusan Kepala BSKAP Nomor 046/H/KR/2025**, *Capaian Pembelajaran pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah*. Official indexed PDF: https://kurikulum.kemendikdasmen.go.id/file/1753929861_manage_file.pdf. The indexed official text identifies Lampiran I as CP Fase Fondasi at the end of the PAUD unit and includes Raudhatul Athfal in the covered forms.
+
+Related official implementation guide: *Panduan Capaian Pembelajaran Fase Fondasi, Edisi Revisi 2025* (109-page PDF as displayed by the official PDF viewer): https://kurikulum.kemendikdasmen.go.id/file/panduan/dokumen/01.%20Panduan%20CP_Fase%20Fondasi_PAUD_14_09_2025_revisi%203.pdf. This guide supports interpretation and planning, but is not a substitute for the official CP decision text.
+
+**Source-lock remains OPEN:** neither the decision PDF nor its complete verbatim CP text has been archived in this repository with page inventory and SHA-256; current operative status/supersession has not yet been conclusively checked; and independent second-check evidence is absent. Therefore no CP wording is represented here as a locked verbatim transcription. Update all crosswalk locators only after those gates close.
