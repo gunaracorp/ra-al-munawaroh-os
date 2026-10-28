@@ -66,3 +66,10 @@ Until clause-level review is completed, do not:
 For every operative clause/attachment section, record: (a) KMA 450 page/section and verbatim text where needed; (b) KMA 1503 page/section and verbatim amendment text; (c) disposition CHANGED / RETAINED / REVOKED-REPLACED / UNRESOLVED; (d) interpretation boundary; (e) specific implication for RA Al Munawaroh; (f) evidence/owner; and (g) reviewer finding. Do not assign a page number or classify a provision without seeing the primary PDF page.
 
 **Next status transition permitted only after:** both full sources are archived and integrity-checked, the redline is independently checked, and reviewer findings are closed. Until then, this document is not an authoritative legal interpretation.
+
+
+## 7. Additional indexed primary-text evidence — 2026-10-29
+
+A search-indexed extract from the official Kemenag-hosted combined PDF exposes text labelled **Lampiran I, page 5** under KMA 1503/2025, section **Kerangka Dasar Kurikulum**. The visible text states the curriculum purpose includes faith, piety, citizenship, critical reasoning, creativity, collaboration, independence, health and communication, and describes deep learning based on Panca Cinta values: love of Allah and His Messenger, knowledge, environment, self and fellow humans, and homeland. It also shows principles for character development, flexibility, and focus on essential content. Source: https://sulteng.kemenag.go.id/files/show/20251020162801surat-penyampaian-kma-kurikulum-2025%2Blampiran_compressed-tzR.pdf (indexed excerpt; source binary still not archived locally).
+
+**Classification boundary:** this is evidence of wording present in the KMA 1503/2025 attachment, not by itself proof of which exact KMA 450/2024 clause was changed, retained, or replaced. No change classification is assigned until the complete KMA 450 and KMA 1503 source PDFs are compared side by side. Treat the page number as the page label shown by the indexed PDF extract and reconfirm it against the downloaded original.
