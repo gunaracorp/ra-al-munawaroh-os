@@ -76,3 +76,8 @@ After review, update the relevant artifacts and this decision record in the same
 **Review status: REQUESTED, NOT RECEIVED.** GitHub Issue #1 is a public request for a qualified reviewer: https://github.com/gunaracorp/ra-al-munawaroh-os/issues/1. At this checkpoint, no reviewer response, review comments, signed decision, or closure evidence has been recorded in this pack. Do not infer reviewer identity or approval.
 
 When a qualified reviewer responds, preserve the original comment or link, date, reviewer qualification/role, artifact version reviewed, finding ID, requested correction, disposition, evidence of correction, and closure/decision date. If no suitable reviewer is available, keep the review gate open and document outreach attempts without fabricating a completed review.
+
+
+## 8. Review request re-opened — 2026-10-29
+
+GitHub Issue #1 was found closed with zero comments and no reviewer evidence. It has been reopened with an explicit statement that closure was not a completed expert review: https://github.com/gunaracorp/ra-al-munawaroh-os/issues/1. Current state: **OPEN — REVIEWER NOT YET IDENTIFIED / NO REVIEW RECEIVED**. This is outreach only. No expert approval is claimed.
