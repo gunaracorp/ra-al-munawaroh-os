@@ -56,3 +56,8 @@ This improves source identification but does **not** close GAP-04/GAP-05: the de
 A reproducible PowerShell acquisition helper is committed at `04-CURRICULUM/SOURCE-ARCHIVE/tools/Acquire-RAM004-PrimarySources.ps1`, with instructions at `04-CURRICULUM/SOURCE-ARCHIVE/README.md`. It has **not been executed in this environment**, because direct network retrieval from the runtime failed. It must be run in a network-enabled Windows/PowerShell environment, then the generated PDFs and integrity manifest must be reviewed and committed.
 
 A blocking follow-up issue was created: https://github.com/gunaracorp/ra-al-munawaroh-os/issues/2. This issue records acceptance criteria for source archiving, hash/page checks, CP version lock, redline, and registry reconciliation. Issue creation is not evidence that any checklist item is complete.
+
+
+## 9. Reviewer outreach state — 2026-10-29
+
+Issue #1 was found closed with zero comments, and no reviewer evidence was present. It has now been reopened with a clarified request for a qualified Pengawas RA or PAUD/RA curriculum expert: https://github.com/gunaracorp/ra-al-munawaroh-os/issues/1. Current status is **OPEN — NO REVIEW RECEIVED**. This action does not constitute external review, validation, or approval.
