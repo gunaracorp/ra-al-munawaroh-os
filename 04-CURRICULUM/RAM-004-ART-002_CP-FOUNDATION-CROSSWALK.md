@@ -99,3 +99,22 @@ Hindari: inferensi karakter dari satu insiden, peringkat anak, diagnosis oleh pe
 
 ---
 **Catatan:** Contoh tujuan, aktivitas dan bukti adalah desain kerja RA Al Munawaroh, bukan rumusan resmi CP.
+
+## 8. CP source-lock gate — 2026-10-29
+
+**Status remains: DRAFT — FOR EXPERT REVIEW.** This crosswalk is not a verbatim CP source and must not be used as evidence that the official CP wording has been locked.
+
+### Source control
+- Official BSKAP source identified: https://kurikulum.kemdikbud.go.id/file/cp/paud/Capaian-Pembelajaran-PAUD.pdf
+- The document title includes TK/RA/BA, KB, SPS and TPA. The current operative version, publication metadata and any replacement/superseding version still require verification.
+- The complete PDF has not yet been transcribed into a controlled repository artifact and has not had an independent second-person text check recorded.
+
+### Mandatory lock procedure
+1. Check the official BSKAP/JDIH listing for the currently applicable CP version and any replacement or corrigendum.
+2. Record exact title, issuing authority, version/date as printed, source URL, retrieval date, page count, file size and SHA-256 for the source PDF.
+3. Transcribe every official CP element heading and complete statement verbatim, preserving punctuation and wording; add the exact page reference for each statement.
+4. A second checker must compare the transcription against the original PDF and record name/role, date, discrepancies and closure.
+5. Keep three layers visually separate: **OFFICIAL CP TEXT (verbatim)**, **INTERNAL RA INTERPRETATION**, and **SUGGESTED LEARNING GOALS/EXPERIENCES**. Never rewrite internal goals as if they were government wording.
+6. Reconcile each crosswalk row and the competency map against the locked official text; unsupported or ambiguous mappings stay marked UNRESOLVED.
+
+Until these steps are complete, CP-linked goals in this document remain provisional internal design examples and the artifact must not be marked APPROVED.
