@@ -47,3 +47,22 @@ Until clause-level review is completed, do not:
 3. Official Kemenag Temanggung socialization report, 5 December 2025: https://temanggung.kemenag.go.id/pendidikan-madrasah/kemenag-kab-temanggung-sosialisasikan-kma-1503-tahun-2025/
 
 **Change note:** v0.1.0 is a transparent preliminary comparison, not a completed legal redline.
+
+## 6. Controlled verification update — 2026-10-29
+
+**Status remains: DRAFT — PARTIAL COMPARISON; FULL TEXT REVIEW REQUIRED.** No clause-by-clause redline is claimed by this update.
+
+### Evidence currently supportable
+- **High confidence, relationship only:** official Kemenag materials identify KMA 1503/2025 as an amendment to KMA 450/2024 covering RA, MI, MTs, MA and MAK.
+- **High confidence, broad emphasis only:** the official Kemenag cover letter/summary materials describe emphasis on Pembelajaran Mendalam and Kurikulum Berbasis Cinta and ask for socialization, integration into coaching/supervision/competency development, and implementation follow-up reporting.
+- **Not established:** the exact operative clause/page for each change; all retained provisions; all repealed/replaced language; and whether a topic is omitted from the amending instrument or remains effective in the base decision.
+
+### Source references
+1. Official Kemenag-hosted combined PDF (cover letter and attached KMA): https://sulteng.kemenag.go.id/files/show/20251020162801surat-penyampaian-kma-kurikulum-2025%2Blampiran_compressed-tzR.pdf — binary archive, page count, completeness and SHA-256 not yet verified.
+2. Official Kemenag DKI corroborating report: https://dki.kemenag.go.id/berita/kemenag-sosialisasikan-kma-1503-tahun-2025-perkuat-implementasi-kurikulum-madrasah-TQt3E — secondary summary, not operative text.
+3. KMA 450/2024 source link recorded in RAM-004-REG-001; complete text and attachment inventory must be checked against the archived copy before comparison.
+
+### Required redline table before sign-off
+For every operative clause/attachment section, record: (a) KMA 450 page/section and verbatim text where needed; (b) KMA 1503 page/section and verbatim amendment text; (c) disposition CHANGED / RETAINED / REVOKED-REPLACED / UNRESOLVED; (d) interpretation boundary; (e) specific implication for RA Al Munawaroh; (f) evidence/owner; and (g) reviewer finding. Do not assign a page number or classify a provision without seeing the primary PDF page.
+
+**Next status transition permitted only after:** both full sources are archived and integrity-checked, the redline is independently checked, and reviewer findings are closed. Until then, this document is not an authoritative legal interpretation.
