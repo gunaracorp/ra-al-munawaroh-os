@@ -127,3 +127,10 @@ Naskah lengkap KMA 1503/2025 beserta lampirannya dan change-diff terhadap KMA 45
 5. Only then consider a status change, after registry and dependent artifacts are reconciled.
 
 **Decision rule:** until all gates above are closed with evidence, no regulatory alignment or CP crosswalk in this repository may be described as approved or fully verified.
+
+
+## 11. CP decision source lead and acquisition protocol — 2026-10-29
+
+The specific official CP decision source now identified is **Keputusan Kepala BSKAP No. 046/H/KR/2025**, *Capaian Pembelajaran pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah*: https://kurikulum.kemendikdasmen.go.id/file/1753929861_manage_file.pdf. Its official indexed text identifies Lampiran I as CP Fase Fondasi and includes RA. The official *Panduan Capaian Pembelajaran Fase Fondasi, Edisi Revisi 2025* is at https://kurikulum.kemendikdasmen.go.id/file/panduan/dokumen/01.%20Panduan%20CP_Fase%20Fondasi_PAUD_14_09_2025_revisi%203.pdf.
+
+A reproducible acquisition helper is now available at `04-CURRICULUM/SOURCE-ARCHIVE/tools/Acquire-RAM004-PrimarySources.ps1`, with operating instructions at `04-CURRICULUM/SOURCE-ARCHIVE/README.md`. This helper has been committed but **has not been executed in this runtime**; no downloaded binary or hash is claimed. Current operative status of CP decision 046/H/KR/2025 must still be checked for supersession, and the complete official text must be archived and independently transcribed before CP lock.
