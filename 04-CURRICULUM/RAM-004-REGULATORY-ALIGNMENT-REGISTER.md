@@ -79,3 +79,32 @@ RAM-004 tidak boleh dinyatakan selaras secara regulatif hanya karena daftar refe
 6. Registry dan riwayat perubahan diperbarui.
 
 **Status akhir: DRAFT — SOURCE REVIEW REQUIRED.**
+
+
+## 7. Hasil tindak lanjut versi 0.2.0
+
+Desk research telah diturunkan menjadi dua artefak yang lebih operasional:
+
+- **RAM-004-REG-002 — Matriks Regulasi Kurikulum RA:** memisahkan hal yang didukung sumber resmi, implikasi desain, bukti implementasi, dan gap verifikasi.
+- **RAM-004-ART-002 — Peta Keterlacakan CP PAUD Fase Fondasi:** menghubungkan elemen CP dengan contoh tujuan, pengalaman belajar, bukti autentik dan tindak lanjut.
+- **RAM-004-ART-003 — Competency & Learning Outcome Map:** mengembangkan kompetensi payung dan hasil belajar internal yang ditautkan ke elemen CP.
+
+### Kesimpulan regulasi yang boleh digunakan saat ini
+
+1. KMA No. 1503 Tahun 2025 adalah perubahan atas KMA No. 450 Tahun 2024 dan ruang lingkupnya mencakup RA. Surat pengantar resmi Ditjen Pendidikan Islam tertanggal 20 Oktober 2025 menyebut penguatan Pembelajaran Mendalam dan Kurikulum Berbasis Cinta serta meminta sosialisasi, integrasi dalam pembinaan/supervisi/pengembangan kompetensi, dan pelaporan tindak lanjut.
+2. Permendikdasmen No. 13 Tahun 2025 mengubah Permendikbudristek No. 12 Tahun 2024 tentang kurikulum PAUD dan jenjang berikutnya.
+3. Permendikdasmen No. 12 Tahun 2025 tentang Standar Isi berstatus berlaku pada basis data BPK dan mencabut Permendikbudristek No. 8 Tahun 2024.
+4. Dokumen CP PAUD BSKAP mencakup satuan TK/RA/BA dan menjelaskan proses memahami CP, merumuskan tujuan, menyusun alur tujuan, lalu merancang pembelajaran dan asesmen.
+
+### Batas yang belum ditutup
+
+Naskah lengkap KMA 1503/2025 beserta lampirannya dan change-diff terhadap KMA 450/2024 tetap harus diarsipkan serta ditelaah. Karena itu, matriks per pasal belum boleh disebut selesai secara hukum atau diberi status APPROVED. CP map juga belum boleh disahkan sampai versi resmi CP yang berlaku dan teks verbatim tiap elemen dikunci dalam sumber terkendali.
+
+### Sumber primer dan resmi yang telah ditambahkan
+
+- Surat Ditjen Pendidikan Islam No. B-249/Dt.I.I.1/Dt.I.I/PP.00/10/2025: https://sulteng.kemenag.go.id/index.php/files/show/20251020162801surat-penyampaian-kma-kurikulum-2025%2Blampiran_compressed-tzR.pdf
+- Permendikdasmen No. 13 Tahun 2025: https://jdih.kemendikdasmen.go.id/sjdih/siperpu/dokumen/salinan/Permendikdasmen_No_13_Tahun_2025_ttg_Perubahan_atas_Permendikbudristek_No_12_Tahun_2024_ttg_Kurikulum_pada_Pendidikan_Anak_Usia_Dini_Jenjang_Dikdasmen.pdf
+- Permendikdasmen No. 12 Tahun 2025: https://peraturan.bpk.go.id/Details/322494/permendikdasmen-no-12-tahun-2025
+- CP PAUD BSKAP: https://kurikulum.kemdikbud.go.id/file/cp/paud/Capaian-Pembelajaran-PAUD.pdf
+
+**Perubahan versi:** v0.2.0 — hasil desk research awal ditambah kesimpulan terkendali dan tautan artefak turunan. Status tetap DRAFT — SOURCE REVIEW REQUIRED.
