@@ -123,3 +123,23 @@ Buat sebagai file terpisah ketika mulai digunakan; jangan mengklaim tersedia seb
 ---
 **Registry steward:** Document controller yang ditunjuk.  
 **Brand steward:** Gugun Gunara — Sang Master Polymath · Sage Universal · The Ultimate Problem Solver.
+
+
+## 10. RAM-004 source verification status — 2026-10-29
+
+**Control decision: RAM-004 regulatory/CP gate remains OPEN; no APPROVED status is authorized.** The following paths were checked/updated on branch `main`; the source binary archive and independent expert review remain outstanding.
+
+| Artifact | Canonical path | Current status after update | Evidence / blocker |
+|---|---|---|---|
+| RAM-004-REG-001 | `04-CURRICULUM/RAM-004-REGULATORY-ALIGNMENT-REGISTER.md` | DRAFT — SOURCE REVIEW REQUIRED | Official source pointers recorded; full primary archive and clause review remain open |
+| RAM-004-REG-002 | `04-CURRICULUM/RAM-004-REG-002_REGULATORY-COMPLIANCE-MATRIX.md` | DRAFT — CONTROLLED DESK REVIEW | Gate table added; no compliance claim until primary-text citations are completed |
+| RAM-004-REG-003 | `04-CURRICULUM/RAM-004-REG-003_KMA-450-vs-1503_CHANGE-LOG.md` | DRAFT — PARTIAL COMPARISON; FULL TEXT REVIEW REQUIRED | Exact clause-level redline not yet possible without archived complete source texts |
+| RAM-004-ART-002 | `04-CURRICULUM/RAM-004-ART-002_CP-FOUNDATION-CROSSWALK.md` | DRAFT — FOR EXPERT REVIEW | Current CP version, verbatim transcription and independent check remain open |
+| RAM-004-ART-003 | `04-CURRICULUM/RAM-004-ART-003_COMPETENCY-LEARNING-OUTCOME-MAP.md` | DRAFT — FOR EXPERT REVIEW | Outcome-to-CP traceability cannot be called complete until CP source lock closes |
+| RAM-004-GAP-001 | `04-CURRICULUM/REVIEWS/RAM-004-SOURCE-VERIFICATION-GAP-REGISTER.md` | OPEN — BLOCKING GATES | Central gap register; see individual closure evidence requirements |
+| RAM-004 expert review request | https://github.com/gunaracorp/ra-al-munawaroh-os/issues/1 | REQUEST OPEN; NO REVIEW EVIDENCE | Request is not a completed review or approval |
+
+### Status governance
+- Do not change any listed artifact to `APPROVED` until all mandatory gates are evidenced and findings are closed.
+- Update this registry again after the PDFs, checksums, CP lock, redline, and reviewer decision actually exist.
+- Any official text and internal RA interpretation must remain distinct in all dependent documents.
