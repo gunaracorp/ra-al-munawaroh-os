@@ -143,3 +143,15 @@ Buat sebagai file terpisah ketika mulai digunakan; jangan mengklaim tersedia seb
 - Do not change any listed artifact to `APPROVED` until all mandatory gates are evidenced and findings are closed.
 - Update this registry again after the PDFs, checksums, CP lock, redline, and reviewer decision actually exist.
 - Any official text and internal RA interpretation must remain distinct in all dependent documents.
+
+
+## 11. Source acquisition tooling and CP decision lead — 2026-10-29
+
+| Artifact | Canonical path | Status | Notes |
+|---|---|---|---|
+| RAM-004 source archive procedure | `04-CURRICULUM/SOURCE-ARCHIVE/README.md` | AVAILABLE — PROCEDURE | Defines acquisition, integrity, completeness and approval rules; does not imply source binaries are present |
+| RAM-004 source acquisition helper | `04-CURRICULUM/SOURCE-ARCHIVE/tools/Acquire-RAM004-PrimarySources.ps1` | COMMITTED — NOT EXECUTED HERE | Downloads candidate PDFs, validates PDF header, computes SHA-256/size, optionally records page count with `pdfinfo`; manual completeness and applicability checks remain mandatory |
+| REG-SRC-002 CP source control | `04-CURRICULUM/SOURCE-ARCHIVE/REG-SRC-002_PAUD-CP-FOUNDATION_SOURCE-CONTROL.md` | SOURCE IDENTIFIED — ARCHIVE/VERSION CHECK OPEN | Identifies official BSKAP decision 046/H/KR/2025 and revised 2025 guide; current operative status, binary archive, hash, verbatim transcription and independent second check remain open |
+| REG-SRC-001 KMA 1503 source control | `04-CURRICULUM/SOURCE-ARCHIVE/REG-SRC-001_KMA-1503-2025_SOURCE-CONTROL.md` | SOURCE IDENTIFIED — BINARY ARCHIVE NOT YET COMMITTED | Indexed official text provides additional wording from Lampiran I, page 5; full source and page comparison still open |
+
+**Registry rule:** a committed download script is not an archived source. No source integrity or legal status is upgraded until its generated manifest, PDF, page inventory and manual checks are reviewed and committed.
