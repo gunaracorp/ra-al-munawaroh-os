@@ -108,3 +108,22 @@ Naskah lengkap KMA 1503/2025 beserta lampirannya dan change-diff terhadap KMA 45
 - CP PAUD BSKAP: https://kurikulum.kemdikbud.go.id/file/cp/paud/Capaian-Pembelajaran-PAUD.pdf
 
 **Perubahan versi:** v0.2.0 — hasil desk research awal ditambah kesimpulan terkendali dan tautan artefak turunan. Status tetap DRAFT — SOURCE REVIEW REQUIRED.
+
+
+## 8. WORK ORDER VERIFICATION GATE — 2026-10-29
+
+**Status remains: DRAFT — SOURCE REVIEW REQUIRED.** This addendum records the evidence boundary as of the review date; it does not claim that source archiving or legal review is complete.
+
+### Verified public-source pointers
+- KMA 1503/2025: official Kemenag-hosted combined PDF identified at https://sulteng.kemenag.go.id/files/show/20251020162801surat-penyampaian-kma-kurikulum-2025%2Blampiran_compressed-tzR.pdf. The binary has **not** been committed and its page completeness/checksum have **not** been verified.
+- Official Kemenag corroboration of amendment relationship: https://dki.kemenag.go.id/berita/kemenag-sosialisasikan-kma-1503-tahun-2025-perkuat-implementasi-kurikulum-madrasah-TQt3E. This is contextual corroboration, not a substitute for the operative decision text.
+- CP PAUD BSKAP PDF: https://kurikulum.kemdikbud.go.id/file/cp/paud/Capaian-Pembelajaran-PAUD.pdf. The official source is identified; current-version status and verbatim text lock remain open.
+
+### Open mandatory gates
+1. Archive KMA 1503/2025 with every attachment and KMA 450/2024 full text; verify PDF readability, page count, document completeness and SHA-256.
+2. Create a clause-by-clause redline with exact document page/section and disposition: changed, retained, revoked/replaced, or unresolved. Do not infer article-level changes from news summaries.
+3. Verify the currently operative CP PAUD Fase Fondasi version from official repository/JDIH records; record metadata and page mapping; transcribe the complete official element statements verbatim and perform an independent second check against the PDF.
+4. Obtain real comments from a Pengawas RA or qualified PAUD/RA curriculum expert; record reviewer role/affiliation as permitted, date, evidence, disposition and closure proof. No approval is implied by a request for review.
+5. Only then consider a status change, after registry and dependent artifacts are reconciled.
+
+**Decision rule:** until all gates above are closed with evidence, no regulatory alignment or CP crosswalk in this repository may be described as approved or fully verified.
