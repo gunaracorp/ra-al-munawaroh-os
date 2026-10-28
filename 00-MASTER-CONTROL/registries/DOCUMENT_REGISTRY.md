@@ -155,3 +155,8 @@ Buat sebagai file terpisah ketika mulai digunakan; jangan mengklaim tersedia seb
 | REG-SRC-001 KMA 1503 source control | `04-CURRICULUM/SOURCE-ARCHIVE/REG-SRC-001_KMA-1503-2025_SOURCE-CONTROL.md` | SOURCE IDENTIFIED — BINARY ARCHIVE NOT YET COMMITTED | Indexed official text provides additional wording from Lampiran I, page 5; full source and page comparison still open |
 
 **Registry rule:** a committed download script is not an archived source. No source integrity or legal status is upgraded until its generated manifest, PDF, page inventory and manual checks are reviewed and committed.
+
+
+## 12. Blocking source-acquisition issue — 2026-10-29
+
+The execution checklist is tracked in [Issue #2 — archive primary curriculum sources and lock CP](https://github.com/gunaracorp/ra-al-munawaroh-os/issues/2). The issue is OPEN. Its checklist is not marked complete by the act of creating it. The source acquisition helper is committed but unexecuted; source binaries, checksums, complete redline, CP verbatim transcription/second check, and expert review remain open. No approval status change is authorized.
