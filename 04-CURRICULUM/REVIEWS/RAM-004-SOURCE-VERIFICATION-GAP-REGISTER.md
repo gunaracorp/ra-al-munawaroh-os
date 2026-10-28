@@ -42,3 +42,10 @@ These pointers do not themselves prove a binary was archived, a current version 
 ## Decision
 
 **RAM-004 is NOT READY FOR APPROVAL.** The next permissible work is to obtain and integrity-check the primary PDFs, lock the CP text, complete the source-cited redline and secure real expert review. Curriculum OS refinement may continue only as provisional internal design and must not be represented as a final regulatory alignment until these blockers close.
+
+
+## 7. New source lead — official CP decision 046/H/KR/2025
+
+On 2026-10-29, an official primary-source candidate was identified at https://kurikulum.kemendikdasmen.go.id/file/1753929861_manage_file.pdf. The indexed official text identifies Keputusan Kepala BSKAP Nomor 046/H/KR/2025 and its Lampiran I for CP Fase Fondasi, including RA. The official companion implementation guide, *Panduan Capaian Pembelajaran Fase Fondasi, Edisi Revisi 2025*, is at https://kurikulum.kemendikdasmen.go.id/file/panduan/dokumen/01.%20Panduan%20CP_Fase%20Fondasi_PAUD_14_09_2025_revisi%203.pdf.
+
+This improves source identification but does **not** close GAP-04/GAP-05: the decision binary is not committed, SHA-256/page inventory are not recorded, later supersession has not been conclusively excluded, and the verbatim CP text has not been independently checked.
