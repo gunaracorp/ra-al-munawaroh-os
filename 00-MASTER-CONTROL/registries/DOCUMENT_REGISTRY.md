@@ -174,4 +174,7 @@ The execution checklist is tracked in [Issue #2 — archive primary curriculum s
 | RAM-017 | `17-SAFEGUARDING/RAM-017_SAFEGUARDING_CHILD_PROTECTION_ETHICS_OS.md` | DRAFT — HIGH-PRIORITY REVIEW REQUIRED | Validate current Indonesian requirements, designate responsible people, create and test operational SOPs |
 | RAM-DIG-PRD-001 | `25-DIGITAL/RA-AL-MUNAWAROH-DIGITAL-PLATFORM-PRD.md` | DRAFT v0.1.0 | Product requirements only; choose stack after repo audit, privacy/security review and owner decisions |
 
+
+| RAM-DIG-ARCH-001 | `25-DIGITAL/RAM-DIG-ARCH-001_WEBSITE_IMPLEMENTATION_BLUEPRINT.md` | DRAFT v0.1.0 | Public website route/content contract, accessibility/privacy gates and technical discovery checklist; actual stack/deployment discovery remains pending |
+
 **Implementation note:** The files above were committed to branch `main` during the 2026-10-29 work session. These are substantive first drafts, not approved operational policies. RAM-004 regulatory and CP verification remains an upstream blocker for curriculum-dependent claims. Website MVP-1 can proceed in parallel using only verified institutional facts and approved public content; the private portal must not collect child-level sensitive data until governance and security gates are met.
