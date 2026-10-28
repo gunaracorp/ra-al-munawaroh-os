@@ -70,3 +70,9 @@ Select one only after a real review:
 ## 7. Change control
 
 After review, update the relevant artifacts and this decision record in the same work cycle. Never change status to APPROVED merely because a draft is complete or a review request has been prepared.
+
+## 7. Review status checkpoint — 2026-10-29
+
+**Review status: REQUESTED, NOT RECEIVED.** GitHub Issue #1 is a public request for a qualified reviewer: https://github.com/gunaracorp/ra-al-munawaroh-os/issues/1. At this checkpoint, no reviewer response, review comments, signed decision, or closure evidence has been recorded in this pack. Do not infer reviewer identity or approval.
+
+When a qualified reviewer responds, preserve the original comment or link, date, reviewer qualification/role, artifact version reviewed, finding ID, requested correction, disposition, evidence of correction, and closure/decision date. If no suitable reviewer is available, keep the review gate open and document outreach attempts without fabricating a completed review.
