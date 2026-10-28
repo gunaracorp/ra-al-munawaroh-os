@@ -49,3 +49,10 @@ These pointers do not themselves prove a binary was archived, a current version 
 On 2026-10-29, an official primary-source candidate was identified at https://kurikulum.kemendikdasmen.go.id/file/1753929861_manage_file.pdf. The indexed official text identifies Keputusan Kepala BSKAP Nomor 046/H/KR/2025 and its Lampiran I for CP Fase Fondasi, including RA. The official companion implementation guide, *Panduan Capaian Pembelajaran Fase Fondasi, Edisi Revisi 2025*, is at https://kurikulum.kemendikdasmen.go.id/file/panduan/dokumen/01.%20Panduan%20CP_Fase%20Fondasi_PAUD_14_09_2025_revisi%203.pdf.
 
 This improves source identification but does **not** close GAP-04/GAP-05: the decision binary is not committed, SHA-256/page inventory are not recorded, later supersession has not been conclusively excluded, and the verbatim CP text has not been independently checked.
+
+
+## 8. Acquisition support and blocking issue — 2026-10-29
+
+A reproducible PowerShell acquisition helper is committed at `04-CURRICULUM/SOURCE-ARCHIVE/tools/Acquire-RAM004-PrimarySources.ps1`, with instructions at `04-CURRICULUM/SOURCE-ARCHIVE/README.md`. It has **not been executed in this environment**, because direct network retrieval from the runtime failed. It must be run in a network-enabled Windows/PowerShell environment, then the generated PDFs and integrity manifest must be reviewed and committed.
+
+A blocking follow-up issue was created: https://github.com/gunaracorp/ra-al-munawaroh-os/issues/2. This issue records acceptance criteria for source archiving, hash/page checks, CP version lock, redline, and registry reconciliation. Issue creation is not evidence that any checklist item is complete.
