@@ -1,0 +1,81 @@
+<!-- RAM-004-REG-001 | Version 0.1.0 | Status: DRAFT — SOURCE REVIEW REQUIRED -->
+# RAM-004-REG-001 — REGULATORY ALIGNMENT REGISTER
+## Verifikasi awal kerangka kurikulum RA Al Munawaroh
+
+**Artifact ID:** RAM-004-REG-001  
+**Version:** 0.1.0  
+**Status:** DRAFT — SOURCE REVIEW REQUIRED  
+**Owner role:** Curriculum Lead / Regulatory Research Lead  
+**Parent document:** RAM-004 — Curriculum OS  
+**Purpose:** Mencatat regulasi dan dokumen kurikulum yang perlu ditelaah sebelum rancangan RAM-004 dapat diselaraskan dan disetujui.
+
+> **Penting:** register ini merupakan hasil desk research awal, bukan pendapat hukum dan bukan bukti kepatuhan. Status dan ketentuan harus diverifikasi dari dokumen primer resmi terkini sebelum dipakai untuk menetapkan kurikulum atau kebijakan lembaga.
+
+## 1. Ringkasan temuan awal
+
+1. Kurikulum RA perlu dibaca melalui kerangka kebijakan madrasah Kementerian Agama, bukan hanya melalui dokumen kurikulum umum PAUD.
+2. KMA Nomor 1503 Tahun 2025 dilaporkan Kementerian Agama sebagai perubahan atas KMA Nomor 450 Tahun 2024 tentang pedoman implementasi kurikulum pada RA, MI, MTs, MA, dan MAK. Salinan lengkap KMA 1503/2025 beserta lampiran yang berlaku masih harus diperoleh dan ditelaah dari sumber primer sebelum pasal/ketentuan spesifik dimasukkan ke RAM-004.
+3. Pada kerangka pendidikan umum, Permendikdasmen Nomor 13 Tahun 2025 mengubah Permendikbudristek Nomor 12 Tahun 2024 tentang kurikulum PAUD, pendidikan dasar, dan menengah. Basis data peraturan BPK menampilkan Permendikdasmen 13/2025 berstatus berlaku. Penerapannya terhadap RA harus dianalisis bersama aturan Kemenag dan ketentuan lintas kementerian yang relevan, bukan diasumsikan otomatis.
+4. Dokumen Capaian Pembelajaran PAUD/Fase Fondasi dari BSKAP menyebut satuan PAUD termasuk TK/RA/BA. Dokumen ini penting sebagai rujukan teknis, tetapi penerapan pada RA harus diselaraskan dengan pedoman madrasah yang berlaku.
+5. Permendikdasmen Nomor 12 Tahun 2025 tentang Standar Isi perlu ditelaah bersama status dan ketentuan khusus yang relevan bagi RA. Jangan memakai peraturan lama yang telah dicabut atau diubah tanpa memeriksa status terbarunya.
+
+## 2. Sumber yang ditemukan
+
+| ID sumber | Dokumen/sumber | Temuan awal | Status pemeriksaan |
+|---|---|---|---|
+| SRC-CUR-001 | Permendikdasmen No. 13 Tahun 2025, basis data Peraturan BPK | Mengubah Permendikbudristek No. 12 Tahun 2024 tentang kurikulum PAUD, pendidikan dasar, dan menengah; halaman BPK menampilkan status berlaku. | Ditemukan pada basis data resmi; telaah pasal dan lampiran masih diperlukan |
+| SRC-CUR-002 | Permendikbudristek No. 12 Tahun 2024, basis data Peraturan BPK | Regulasi kurikulum yang kemudian diubah oleh Permendikdasmen 13/2025. | Jangan dipakai sendirian; baca bersama perubahannya |
+| SRC-CUR-003 | KMA No. 1503 Tahun 2025, informasi resmi Kemenag | Diberitakan sebagai perubahan atas KMA 450/2024 dan mencakup pedoman implementasi kurikulum madrasah termasuk RA. | Informasi resmi ditemukan; salinan primer lengkap dan lampiran perlu diverifikasi |
+| SRC-CUR-004 | KMA No. 450 Tahun 2024, salinan PDF pada situs Kemenag | Pedoman implementasi kurikulum madrasah terdahulu; perlu dibaca bersama perubahan tahun 2025. | Salinan terdahulu ditemukan; status dan perubahan wajib dicek |
+| SRC-CUR-005 | Capaian Pembelajaran untuk Satuan PAUD (TK/RA/BA, KB, SPS, TPA), BSKAP | Panduan teknis memahami CP Fase Fondasi dan proses merancang pembelajaran/asesmen PAUD. | Dokumen resmi teknis ditemukan; perlu dipetakan dengan pedoman Kemenag terkini |
+| SRC-CUR-006 | Permendikdasmen No. 12 Tahun 2025 tentang Standar Isi, basis data Peraturan BPK | Rujukan untuk ruang lingkup materi pendidikan; perlu telaah isi dan penerapan pada RA. | Ditemukan; status dan ketentuan terkait perlu diperiksa saat telaah penuh |
+
+## 3. Referensi yang dapat dibuka
+
+1. Permendikdasmen No. 13 Tahun 2025: https://peraturan.bpk.go.id/Details/322506/permendikda
+2. Permendikbudristek No. 12 Tahun 2024: https://peraturan.bpk.go.id/Details/281847/permendikbudriset-no-12-tahun-2024
+3. Informasi resmi Kemenag mengenai KMA 1503/2025: https://dki.kemenag.go.id/berita/kemenag-sosialisasikan-kma-1503-tahun-2025-perkuat-implementasi-kurikulum-madrasah-TQt3E
+4. Salinan KMA 450/2024 di situs Kemenag: https://dki.kemenag.go.id/storage/files/KMA%20No.%20450%20Tahun%202024%20-%20Pedoman%20Implementasi%20Kurikulum%20Pada%20Madarsah_ayomadrasah%20%281%29.pdf
+5. Capaian Pembelajaran PAUD/Fase Fondasi, BSKAP: https://kurikulum.kemdikbud.go.id/file/cp/paud/Capaian-Pembelajaran-PAUD.pdf
+6. Permendikdasmen No. 12 Tahun 2025 tentang Standar Isi: https://peraturan.bpk.go.id/Details/322494/permendikdasmen-no-
+
+Tautan nomor 6 perlu diperiksa kembali untuk memastikan alamat kanonis lengkap dan metadata status sebelum dijadikan referensi final. Jangan mengutipnya sebagai ketentuan terverifikasi hanya berdasarkan judul hasil pencarian.
+
+## 4. Pemetaan awal ke RAM-004
+
+| Area RAM-004 | Pekerjaan penyelarasan |
+|---|---|
+| Filosofi dan prinsip | Pastikan prinsip internal tidak bertentangan dengan ketentuan wajib; bedakan nilai lembaga dari persyaratan hukum |
+| Capaian pembelajaran | Ambil rumusan resmi yang berlaku untuk RA dari dokumen primer dan lampiran terbaru; jangan menciptakan capaian pengganti |
+| Domain internal | Petakan domain RAM-004 ke struktur/capaian resmi tanpa menyatakan domain internal sebagai kategori hukum |
+| Perencanaan pembelajaran | Verifikasi alur perencanaan, tujuan pembelajaran, pengalaman, dan dokumen yang diwajibkan dalam panduan madrasah terbaru |
+| Asesmen | Cocokkan prinsip asesmen RAM-006 dengan panduan pembelajaran dan asesmen terbaru untuk madrasah/RA |
+| Kokurikuler | Verifikasi ketentuan terbaru, termasuk perubahan kebijakan yang terkait P5RA/kokurikuler bila berlaku |
+| Nilai Islam dan karakter | Selaraskan dengan pedoman madrasah dan visi lembaga; catat sumber serta batas interpretasi |
+| Kalender dan alokasi waktu | Jangan tetapkan angka sebelum struktur resmi terbaru dan kondisi satuan pendidikan diperiksa |
+| Benchmark internasional | Perlakukan sebagai pengayaan setelah kewajiban nasional dipetakan, bukan sebagai pengganti |
+| Evaluasi kurikulum | Selaraskan mekanisme review dengan pedoman implementasi kurikulum dan tata kelola internal |
+
+## 5. Tindakan wajib berikutnya
+
+- [ ] Dapatkan salinan primer lengkap KMA 1503 Tahun 2025 berikut lampiran dan panduan teknis yang berlaku.
+- [ ] Verifikasi status resmi KMA 450 Tahun 2024 setelah perubahan tahun 2025.
+- [ ] Telaah ketentuan yang relevan pada Permendikdasmen 13/2025 dan aturan yang diubahnya.
+- [ ] Telaah Standar Isi terbaru serta status peraturan terkait yang lebih lama.
+- [ ] Periksa dokumen Capaian Pembelajaran PAUD/Fase Fondasi versi yang berlaku.
+- [ ] Susun matriks pasal/ketentuan → kewajiban → implikasi RAM-004 → bukti kepatuhan.
+- [ ] Minta review pihak yang kompeten dalam kurikulum madrasah/RA sebelum menetapkan interpretasi.
+- [ ] Perbarui RAM-003 Source & Knowledge Register dengan metadata sumber dan status pemeriksaannya.
+- [ ] Revisi RAM-004 hanya setelah matriks sumber primer selesai dan hasil review dicatat.
+
+## 6. Gerbang keputusan
+
+RAM-004 tidak boleh dinyatakan selaras secara regulatif hanya karena daftar referensi telah dibuat. Gerbang ini baru terpenuhi apabila:
+1. Salinan primer dan status berlaku telah diverifikasi.
+2. Ketentuan relevan dibaca dalam konteks lengkapnya.
+3. Pemetaan kewajiban dan implikasi kurikulum tersedia.
+4. Konflik atau area yang belum jelas ditandai dan ditinjau.
+5. Reviewer dan keputusan terdokumentasi.
+6. Registry dan riwayat perubahan diperbarui.
+
+**Status akhir: DRAFT — SOURCE REVIEW REQUIRED.**
