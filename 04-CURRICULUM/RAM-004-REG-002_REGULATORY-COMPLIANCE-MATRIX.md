@@ -85,3 +85,17 @@ Matriks baru boleh dinaikkan dari DRAFT ke IN_REVIEW jika tersedia:
 
 ---
 **Catatan versi:** v0.2.0 memperluas register desk research menjadi matriks keterlacakan; belum merupakan persetujuan hukum atau persetujuan kurikulum.
+
+## 8. Verification gate update — 2026-10-29
+
+**Status remains: DRAFT — CONTROLLED DESK REVIEW.** Rows in this matrix must not be interpreted as proof of compliance until the underlying operative text is archived and clause-level citations are added.
+
+| Gate | Current evidence | Status | Required closure evidence |
+|---|---|---|---|
+| KMA 1503/2025 complete source | Official Kemenag-hosted PDF URL identified; binary not in repository | OPEN | Committed full PDF, readable/open check, page inventory, completeness check and SHA-256 |
+| KMA 450/2024 complete source | A source URL is recorded in REG-001; binary archive/integrity not evidenced in this gate | OPEN | Full text and attachments archived or controlled reference, page inventory and SHA-256 |
+| Clause-level legal mapping | Official summaries support amendment relationship and broad policy emphasis only | OPEN | Each row cites exact operative document, page/section/clause, exact change classification and RA-specific impact |
+| CP version lock | Official BSKAP CP PAUD URL identified | OPEN | Current-version check, source metadata, exact page references and independent verbatim transcription check |
+| Independent expert review | Review request exists; no completed review evidence recorded | OPEN | Dated reviewer comments, findings, dispositions, closure evidence and decision record |
+
+Use four explicit change dispositions in the KMA comparison: **CHANGED**, **RETAINED**, **REVOKED/REPLACED**, and **UNRESOLVED**. “Not found in the currently accessible summary” is not evidence that a provision was revoked. Keep official wording separate from internal design implications and recommendations.
