@@ -160,3 +160,18 @@ Buat sebagai file terpisah ketika mulai digunakan; jangan mengklaim tersedia seb
 ## 12. Blocking source-acquisition issue — 2026-10-29
 
 The execution checklist is tracked in [Issue #2 — archive primary curriculum sources and lock CP](https://github.com/gunaracorp/ra-al-munawaroh-os/issues/2). The issue is OPEN. Its checklist is not marked complete by the act of creating it. The source acquisition helper is committed but unexecuted; source binaries, checksums, complete redline, CP verbatim transcription/second check, and expert review remain open. No approval status change is authorized.
+
+
+## 13. Pedagogy, assessment, staff, family and digital product artifacts — 2026-10-29
+
+| ID | Canonical path | Status | Dependencies / next gate |
+|---|---|---|---|
+| RAM-005 | `05-PEDAGOGY/RAM-005_PEDAGOGY_LEARNING_OS.md` | DRAFT v0.1.0 | Depends on verified RAM-004/CP; expert review, teacher usability review, safeguarding/privacypolicy and pilot required |
+| RAM-006 | `06-ASSESSMENT/RAM-006_ASSESSMENT_EVIDENCE_OS.md` | DRAFT v0.1.0 | Define secure data governance and verify curriculum traceability before use |
+| RAM-007 | `07-TEACHER/RAM-007_TEACHER_OS.md` | DRAFT v0.1.0 | Validate staffing roles, SOPs, training and workload with school leadership and teachers |
+| RAM-008 | `08-FAMILY/RAM-008_PARENT_FAMILY_OS.md` | DRAFT v0.1.0 | Review communications, complaint and emergency pathways with family representatives |
+| RAM-009 | `09-CHILD-DEVELOPMENT/RAM-009_CHILD_DEVELOPMENT_WELLBEING_OS.md` | DRAFT v0.1.0 | Review with PAUD/RA and safeguarding/health roles; not a diagnostic instrument |
+| RAM-017 | `17-SAFEGUARDING/RAM-017_SAFEGUARDING_CHILD_PROTECTION_ETHICS_OS.md` | DRAFT — HIGH-PRIORITY REVIEW REQUIRED | Validate current Indonesian requirements, designate responsible people, create and test operational SOPs |
+| RAM-DIG-PRD-001 | `25-DIGITAL/RA-AL-MUNAWAROH-DIGITAL-PLATFORM-PRD.md` | DRAFT v0.1.0 | Product requirements only; choose stack after repo audit, privacy/security review and owner decisions |
+
+**Implementation note:** The files above were committed to branch `main` during the 2026-10-29 work session. These are substantive first drafts, not approved operational policies. RAM-004 regulatory and CP verification remains an upstream blocker for curriculum-dependent claims. Website MVP-1 can proceed in parallel using only verified institutional facts and approved public content; the private portal must not collect child-level sensitive data until governance and security gates are met.
