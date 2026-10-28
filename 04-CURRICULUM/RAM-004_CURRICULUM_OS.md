@@ -9,7 +9,7 @@
 **Owner role:** Curriculum Lead  
 **Accountable governance:** RAM-013 — Governance, Leadership & Institutional OS  
 **Primary dependencies:** RAM-000, RAM-001, RAM-002  
-**Conceptual dependency:** RAM-003 — Knowledge Architecture (belum terverifikasi sebagai berkas kanonis)  
+**Primary knowledge dependency:** RAM-003 — Knowledge Architecture (DRAFT; belum disetujui)  
 **Related modules:** RAM-005, RAM-006, RAM-007, RAM-008, RAM-009, RAM-010, RAM-012, RAM-017, RAM-018, RAM-020  
 **Proposed canonical path:** `04-CURRICULUM/RAM-004_CURRICULUM_OS.md`
 
@@ -224,7 +224,7 @@ Setiap keputusan penting harus membedakan:
 - **ASSUMPTION / HYPOTHESIS:** hal yang belum terverifikasi atau perlu diuji.
 - **DECISION:** keputusan pihak berwenang.
 
-Catat sumber, tanggal, konteks, batas penggunaan, dan status peninjauan. RAM-003 belum terverifikasi sebagai artefak kanonis; sampai ditetapkan, aturan ini merupakan kontrak kerja sementara yang perlu diselaraskan.
+Catat sumber, tanggal, konteks, batas penggunaan, dan status peninjauan. RAM-003 kini tersedia sebagai artefak kanonis berstatus DRAFT; aturan ini tetap perlu diselaraskan melalui review formal.
 
 ## 16. Tata kelola perubahan
 
@@ -295,7 +295,7 @@ Daftar ini adalah rencana, bukan klaim bahwa file turunannya telah dibuat.
 - [ ] RAM-000 dan Document Registry konsisten.
 - [ ] RAM-001 ditinjau untuk keselarasan nilai dan mandat.
 - [ ] RAM-002 memiliki dependensi yang benar dan menjalani review yang diperlukan.
-- [ ] RAM-003 tersedia sebagai dokumen kanonis atau dependensi sementaranya dinyatakan jelas.
+- [ ] RAM-003 ditinjau bersama RAM-004 dan dependensi lintas dokumen diselaraskan.
 - [ ] Regulasi dan kurikulum resmi Indonesia yang berlaku diverifikasi melalui sumber primer.
 - [ ] Pemetaan hasil/tujuan ditinjau pihak kompeten.
 - [ ] RAM-005 dan RAM-006 ditinjau untuk kelayakan penerapan dan evaluasi.
