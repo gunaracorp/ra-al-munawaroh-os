@@ -139,3 +139,12 @@ Before any outcome is treated as verified, each row must include: unique outcome
 The source-lock prerequisite is the official BSKAP CP PAUD document at https://kurikulum.kemdikbud.go.id/file/cp/paud/Capaian-Pembelajaran-PAUD.pdf. Its current-version status, PDF integrity metadata, verbatim transcription and independent second check remain open. Therefore this map is not approved and cannot yet support a claim that every outcome is fully traced to the operative CP.
 
 **Quality rule:** do not turn developmental learning into rigid age-based pass/fail thresholds; evidence should inform responsive teaching and be interpreted in context. Any later changes from expert review must be recorded with the finding ID, change made, evidence of closure and reviewer/decision date.
+
+
+## 8. Updated CP source dependency — 2026-10-29
+
+The official CP primary-source candidate now identified is **Keputusan Kepala BSKAP Nomor 046/H/KR/2025**, *Capaian Pembelajaran pada Pendidikan Anak Usia Dini, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah*: https://kurikulum.kemendikdasmen.go.id/file/1753929861_manage_file.pdf. Its indexed official text identifies the Fase Fondasi CP for PAUD and explicitly includes RA.
+
+The companion *Panduan Capaian Pembelajaran Fase Fondasi, Edisi Revisi 2025* is available at https://kurikulum.kemendikdasmen.go.id/file/panduan/dokumen/01.%20Panduan%20CP_Fase%20Fondasi_PAUD_14_09_2025_revisi%203.pdf. Use it as an implementation guide, not as a substitute for the decision's verbatim CP text.
+
+**Status remains DRAFT.** Current-version/supersession check, source PDF archive, integrity metadata, verbatim element transcription, page-level mapping, and independent second check remain open. Outcome rows without a validated locator remain provisional.
