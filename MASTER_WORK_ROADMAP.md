@@ -149,3 +149,34 @@ Setiap perubahan material harus mencatat: ID perubahan, alasan, artefak terdampa
 **Strategic consulting framework:** PT Top Konsultan Internasional
 
 *Pencantuman identitas di atas adalah kerangka branding dan peran yang diarahkan; kewenangan, hubungan hukum, dan penggunaan merek tetap mengikuti dokumen resmi yang berlaku.*
+
+
+## 12. Delivery update — 2026-10-29
+
+### Newly committed first-draft artifacts
+- RAM-005 Pedagogy & Learning OS
+- RAM-006 Assessment & Evidence OS
+- RAM-007 Teacher OS
+- RAM-008 Parent & Family OS
+- RAM-009 Child Development & Wellbeing OS
+- RAM-017 Safeguarding, Child Protection & Ethics OS
+- RAM-DIG-PRD-001 Digital Platform Product Requirements
+
+See `00-MASTER-CONTROL/registries/DOCUMENT_REGISTRY.md` for canonical paths and current status.
+
+### Workstream order from here
+1. **Regulatory source lock (blocking for curriculum claims):** archive primary PDFs and annexes; record metadata, page counts and SHA-256; verify whether any later KMA/CP instrument supersedes the candidate sources; complete clause redline and independent CP transcription check.
+2. **Safety and governance:** designate real owners and deputies; verify Indonesian requirements; produce operational SOPs from RAM-017; test incident and emergency workflows.
+3. **Curriculum traceability:** close RAM-004 gaps and trace every intended learning outcome to verified CP; distinguish local enrichment from official wording.
+4. **Pedagogy and assessment validation:** review RAM-005/006/007/008/009 with RA/PAUD experts, teachers and family representatives; run a bounded pilot only after safety gates are met.
+5. **Website MVP-1:** audit repository structure and deployment constraints; finalize brand/content facts, approved public policies, sitemap, accessibility, privacy notice and contact data; then implement the site and test before deployment.
+6. **Private portal later:** do not introduce child-level sensitive records until threat model, access control, consent/legal basis, retention, audit trail, incident response and security testing are approved.
+
+### Definition of website-ready
+The website can be implemented when the stack/deployment target is confirmed and each public page has an owner, approved factual content, accessibility acceptance checks, privacy review and a publishing workflow. This does not require pretending the entire education OS is already approved.
+
+### Definition of system-ready
+A system module is ready only when its requirements, user roles, workflows, data classification, controls, test cases, support owner, release/rollback plan and approval are recorded. A Markdown draft alone does not make a running system.
+
+### Status guardrail
+All new artifacts are DRAFT. RAM-004 remains open pending regulatory source verification and independent review. No public claim of legal compliance, accreditation, measured outcomes or operational readiness may be made without evidence.
