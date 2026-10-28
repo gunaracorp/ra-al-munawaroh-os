@@ -129,3 +129,13 @@ Dilarang menjadikan satu insiden, satu lembar kerja, kemampuan calistung formal,
 
 ---
 **Riwayat:** v0.1.0 — peta awal kompetensi dan hasil belajar internal, disusun untuk review; belum disahkan.
+
+## 7. Traceability and approval gate — 2026-10-29
+
+**Status remains: DRAFT — FOR EXPERT REVIEW.** The competency and learning-outcome statements in this document are internal design proposals, not verbatim government CP text.
+
+Before any outcome is treated as verified, each row must include: unique outcome ID; locked official CP element ID and verbatim source locator (document version + page); internal competency; context-specific observable evidence; inclusive adaptations where needed; intended learning experience; assessment/observation note; and reviewer disposition. A row without a valid official CP locator must be labelled **UNMAPPED / PROVISIONAL**, not assumed to align.
+
+The source-lock prerequisite is the official BSKAP CP PAUD document at https://kurikulum.kemdikbud.go.id/file/cp/paud/Capaian-Pembelajaran-PAUD.pdf. Its current-version status, PDF integrity metadata, verbatim transcription and independent second check remain open. Therefore this map is not approved and cannot yet support a claim that every outcome is fully traced to the operative CP.
+
+**Quality rule:** do not turn developmental learning into rigid age-based pass/fail thresholds; evidence should inform responsive teaching and be interpreted in context. Any later changes from expert review must be recorded with the finding ID, change made, evidence of closure and reviewer/decision date.
