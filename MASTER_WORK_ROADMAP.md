@@ -180,3 +180,30 @@ A system module is ready only when its requirements, user roles, workflows, data
 
 ### Status guardrail
 All new artifacts are DRAFT. RAM-004 remains open pending regulatory source verification and independent review. No public claim of legal compliance, accreditation, measured outcomes or operational readiness may be made without evidence.
+
+
+## 13. Website and academic system readiness — 2026-10-29
+
+### Added readiness documents
+- `25-DIGITAL/RAM-DIG-CONTENT-REGISTER-001_PUBLIC_WEBSITE_CONTENT_REGISTER.md` — page-by-page content inventory and publication gates.
+- `25-DIGITAL/RAM-DIG-PRD-002_ACADEMIC_EDUCATION_SYSTEM.md` — staged academic/education system requirements.
+- `25-DIGITAL/RAM-DIG-ARCH-002_DATA_GOVERNANCE_AND_ROLE_MATRIX.md` — classification, draft access matrix and privacy-by-design gate.
+
+### Decision
+**We can begin technical discovery and a non-sensitive website prototype now.** We do not need to finish every education OS document before building the public-facing website shell. However, publication of factual pages requires verified institutional details and approval. Live child-level records remain blocked until privacy, legal, access, retention and security gates are satisfied.
+
+### Immediate next sequence
+1. Audit the current repository and identify framework, package manager, build/test scripts, deployment configuration and any existing application.
+2. Obtain owner-approved institutional facts: official name, address, contact, program, admissions process, fee policy (if public), facilities and real operating hours.
+3. Approve brand and visual direction; design mobile-first page layouts and reusable components with contrast/accessibility checks.
+4. Implement public MVP routes and content workflow; do not invent missing facts—use clearly marked internal placeholders during development.
+5. Run build, link, responsive, keyboard, contrast, privacy and security checks; confirm domain/hosting, backup and rollback.
+6. In parallel, interview leadership and teachers to validate academic workflows; build staff document/planning workspace first, with no child-level sensitive data.
+7. Keep RAM-004 source verification and RAM-017 safeguarding approval as separate blocking gates for curriculum/compliance claims and operational use.
+
+### Definition of “ready to start”
+- Product scope and sitemap exist.
+- Content inventory and acceptance criteria exist.
+- Technical discovery is authorized.
+- Sensitive-data boundaries are documented.
+- Remaining inputs have named owners and are tracked rather than silently guessed.
