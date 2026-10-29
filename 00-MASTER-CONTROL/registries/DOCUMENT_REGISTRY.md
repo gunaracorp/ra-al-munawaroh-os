@@ -178,3 +178,13 @@ The execution checklist is tracked in [Issue #2 — archive primary curriculum s
 | RAM-DIG-ARCH-001 | `25-DIGITAL/RAM-DIG-ARCH-001_WEBSITE_IMPLEMENTATION_BLUEPRINT.md` | DRAFT v0.1.0 | Public website route/content contract, accessibility/privacy gates and technical discovery checklist; actual stack/deployment discovery remains pending |
 
 **Implementation note:** The files above were committed to branch `main` during the 2026-10-29 work session. These are substantive first drafts, not approved operational policies. RAM-004 regulatory and CP verification remains an upstream blocker for curriculum-dependent claims. Website MVP-1 can proceed in parallel using only verified institutional facts and approved public content; the private portal must not collect child-level sensitive data until governance and security gates are met.
+
+## 14. Website and academic system readiness artifacts — 2026-10-29
+
+| ID | Canonical path | Status | Next gate |
+|---|---|---|---|
+| RAM-DIG-CONTENT-REGISTER-001 | `25-DIGITAL/RAM-DIG-CONTENT-REGISTER-001_PUBLIC_WEBSITE_CONTENT_REGISTER.md` | DRAFT v0.1.0 | Owner must verify institutional facts, contacts, admissions process, policies and approve page copy |
+| RAM-DIG-PRD-002 | `25-DIGITAL/RAM-DIG-PRD-002_ACADEMIC_EDUCATION_SYSTEM.md` | DRAFT v0.1.0 | Interview actual users, approve workflows, role matrix, privacy/security gates and staged MVP scope |
+| RAM-DIG-ARCH-002 | `25-DIGITAL/RAM-DIG-ARCH-002_DATA_GOVERNANCE_AND_ROLE_MATRIX.md` | DRAFT v0.1.0 | Validate Indonesian requirements, assign real data owners and approve access/retention/security controls |
+
+**Readiness decision:** documentation now defines a public website content inventory and a first draft of the academic-system product requirements. This is sufficient to begin technical discovery and build a non-sensitive website prototype, but not enough to deploy with unverified content or process identifiable child data. Actual repository/stack/deployment audit and owner-supplied facts remain outstanding.
