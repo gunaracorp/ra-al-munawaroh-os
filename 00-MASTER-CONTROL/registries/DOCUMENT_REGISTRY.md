@@ -188,3 +188,12 @@ The execution checklist is tracked in [Issue #2 — archive primary curriculum s
 | RAM-DIG-ARCH-002 | `25-DIGITAL/RAM-DIG-ARCH-002_DATA_GOVERNANCE_AND_ROLE_MATRIX.md` | DRAFT v0.1.0 | Validate Indonesian requirements, assign real data owners and approve access/retention/security controls |
 
 **Readiness decision:** documentation now defines a public website content inventory and a first draft of the academic-system product requirements. This is sufficient to begin technical discovery and build a non-sensitive website prototype, but not enough to deploy with unverified content or process identifiable child data. Actual repository/stack/deployment audit and owner-supplied facts remain outstanding.
+
+
+## 15. God Tier execution checklist — 2026-10-29
+
+| ID | Canonical path | Status | Purpose / next gate |
+|---|---|---|---|
+| RAM-DIG-EXEC-001 | `25-DIGITAL/RAM-DIG-EXECUTION-CHECKLIST-001_GOD_TIER_READINESS.md` | DRAFT v0.1.0 | Consolidated done/not-done snapshot, planning estimates, MVP sequence, child-data blockers and definition of done. Execute repository audit first; checkbox presence is not proof of completion. |
+
+Planning estimates are conditional: repository/technical audit 0.5–1 day; public website MVP 1–2 weeks after access and decisions; staff-only academic foundation 3–6 weeks; integrated controlled pilot approximately 8–16+ weeks depending on curriculum, safeguarding, privacy/security approvals and reviewer availability. These are estimates, not guarantees.
